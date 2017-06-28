@@ -15,7 +15,7 @@
     \]
     The experimentally found $S$ is 
     \[
-        S=180.2\pm 1.9 \times10^{-3}m,\quad u_{rS}=1.05\%.
+        S=(180.2\pm 1.9) \times10^{-3}m,\quad u_{rS}=1.05\%.
     \]
 
 \subsection{Uncertainty of time measurements}
@@ -53,7 +53,7 @@
     \]
     The experimentally found $d$ is 
     \[
-        d=1.985\pm 0.005 \times10^{-3}m,\quad u_{rd}=0.25\%.
+        d=(1.985\pm 0.005) \times10^{-3}m,\quad u_{rd}=0.25\%.
     \]
 
 \subsection{Uncertainty of measurements for the inner diameter of the flask}
@@ -72,7 +72,7 @@
     \]
     The experimentally found $D$ is 
     \[
-        D=62.41\pm 0.21 \times10^{-3}m,\quad u_{rD}=0.34\%.
+        D=(62.41\pm 0.21) \times10^{-3}m,\quad u_{rD}=0.34\%.
     \]
 
 \subsection{Uncertainty of the density of the metal ball}
@@ -100,13 +100,17 @@
     \]
     Hence the experimentally $\rho_2$ is
     \[
-        \rho_2=8.285\pm 0.252\times10^3kg/m^3, \quad u_{r\rho_2}=3.04\%.
+        \rho_2=(8.285\pm 0.252)\times10^3kg/m^3, \quad u_{r\rho_2}=3.04\%.
     \]
 
 \subsection{Uncertainty of the viscosity coefficient}
     The viscosity coeffient can be found from
     \[
-        \eta=\frac{2}{9}gR^2\frac{(\rho_2-\rho_1)t}{s}\frac{1}{1+2.4\frac{R}{R_c}}\approx 0.6790\frac{kg}{m\cdot s}.
+    \begin{split}
+        \eta&=\frac{2}{9}gR^2\frac{(\rho_2-\rho_1)t}{s}\frac{1}{1+2.4\frac{R}{R_c}}\\
+            &=\frac{2}{9}\times 9.794\times 0.0009925^2\times \frac{(8285-955)\times 8.38}{0.1802}\times \frac{1}{1+2.4\times \frac{0.0009925}{0.031205}}\\
+            &\approx 0.679\frac{kg}{m\cdot s}.
+    \end{split}
     \]
     In order to find the propagated uncertainty, first find the partial derivatives
     \[
@@ -123,7 +127,7 @@
     \[
     \begin{split}
         u_{\eta}&=\sqrt{(\frac{\partial\eta}{\partial R})^2(u_R)^2+(\frac{\partial\eta}{\partial \rho_2})^2(u_{\rho_2})^2+(\frac{\partial\eta}{\partial \rho_1})^2(u_{\rho_1})^2+(\frac{\partial\eta}{\partial u_t})^2(t)^2+(\frac{\partial\eta}{\partial S})^2(u_S)^2+(\frac{\partial\eta}{\partial u_{R_c}})^2(u_{R_c})^2}\\
-        &\approx 0.02656\frac{kg}{m\cdot s}.
+        &\approx 0.03\frac{kg}{m\cdot s}.
     \end{split}
     \]
     Similarly, to find the relative uncertainty, first find the partial derivatives
@@ -142,10 +146,10 @@
     \begin{split}
         u_{\eta}&=[(\frac{\partial\ln\eta}{\partial R})^2(u_R)^2+(\frac{\partial\ln\eta}{\partial \rho_2})^2(u_{\rho_2})^2+(\frac{\partial\ln\eta}{\partial \rho_1})^2(u_{\rho_1})^2\\
         &\quad+(\frac{\partial\ln\eta}{\partial u_t})^2(t)^2+(\frac{\partial\ln\eta}{\partial S})^2(u_S)^2+(\frac{\partial\ln\eta}{\partial u_{R_c}})^2(u_{R_c})^2]^\frac{1}{2}\\
-        &\approx 3.912\%.
+        &\approx 3.91\%.
     \end{split}
     \]
     Hence the experimentally $\eta$ is
     \[
-        \eta=0.6790\pm 0.02656\frac{kg}{m\cdot s}, \quad u_{r_{\eta}}=3.912\%.
+        \eta=0.679\pm 0.03\frac{kg}{m\cdot s}, \quad u_{r_{\eta}}=3.91\%.
     \]
