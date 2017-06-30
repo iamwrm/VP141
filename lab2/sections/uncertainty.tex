@@ -78,7 +78,7 @@
 \subsection{Uncertainty of the density of the metal ball}
     Density of the metal balls can be found from
     \[
-        \rho_2=\frac{m_0}{V}=\frac{m_0}{\frac{4}{3}\pi(\frac{d}{2})^3}=\frac{6m_0}{\pi d^3}\approx 8.285\times10^3 kg/m^3.
+        \rho_2=\frac{m_0}{V}=\frac{m_0}{\frac{4}{3}\pi(\frac{d}{2})^3}=\frac{6m_0}{\pi d^3}=\frac{6\times0.03393\times10^{-3}}{3.14159\times(1.985\times10^{-3})^3}\approx 8.285\times10^3 kg/m^3.
     \]
     In order to find the propagated uncertainty, first find the partial derivatives
     \[
@@ -87,7 +87,11 @@
     \]
     Hence, using Matlab we can obtain the propagated uncertainty by the formula
     \[
-        u_{\rho_2}=\sqrt{(\frac{\partial\rho_2}{\partial m_0})^2(u_{m_0})^2+(\frac{\partial\rho_2}{\partial d})^2(u_d)^2}\approx 0.252\times10^3kg/m^3.
+    \begin{split}
+        u_{\rho_2}&=\sqrt{(\frac{\partial\rho_2}{\partial m_0})^2(u_{m_0})^2+(\frac{\partial\rho_2}{\partial d})^2(u_d)^2}\\
+        &=\sqrt{(\frac{6\times 0.001\times10^-3}{3.14159\times (1.985\times10^{-3})^3})^2+(\frac{18\times 0.03393\times10^{-3}\times 0.005\times10^-3}{3.14159\times (1.985\times10^{-3})^4})^2}\\
+        &\approx 0.252\times10^3kg/m^3.
+    \end{split}
     \]
     Similarly, to find the relative uncertainty, first find the partial derivatives
     \[
@@ -96,7 +100,11 @@
     \]
     The relative uncertainty is
     \[
-        u_{r\rho_2}=\frac{u_{\rho_2}}{\bar{\rho_2}}=\sqrt{(\frac{\partial \ln\rho_2}{\partial m_0})^2(u_{m_0})^2+(\frac{\partial \ln\rho_2}{\partial d})^2(u_d)^2}\approx 3.04\%
+    \begin{split}
+        u_{r\rho_2}&=\frac{u_{\rho_2}}{\bar{\rho_2}}=\sqrt{(\frac{\partial \ln\rho_2}{\partial m_0})^2(u_{m_0})^2+(\frac{\partial \ln\rho_2}{\partial d})^2(u_d)^2}\\
+        &=\sqrt{(\frac{0.001\times10^{-3}}{0.03393\times10^{-3}})^2+(\frac{-3\times 0.005\times10^{-3}}{1.985\times10{-3}})^2}\\
+        &\approx 3.04\%
+    \end{split}
     \]
     Hence the experimentally $\rho_2$ is
     \[
