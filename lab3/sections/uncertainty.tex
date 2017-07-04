@@ -1,0 +1,24 @@
+\section{Measurement Uncertainty Analysis}
+\subsection{Uncertainty of spring constants}
+    The standard deviation of least-squares method is calculated by
+    \[
+        \sigma_y=\sqrt{\frac{1}{k-n}\sum_{i=1}^{k}\varepsilon_i^2}
+    \],
+    where $k$ is the number of measurements and $n$ is the number of unknown quantity. In this experiment, we need to figure out both $k$ and $b$ so $n$ should be 2 here. Considering spring 1, we plug in the data and obtain
+    \[
+    \begin{split}
+        \sigma_y&\approx \sqrt{\frac{1}{6-2}\times [(0.288)^2+(-0.360)^2+(-0.285)^2+(0.0290)^2+(0.765)^2+(-0.437)^2]\times 10^{-6}}\\
+        &=5.17\times10^{-4} N
+    \end{split}
+    \]
+    Therefore, the standard deviation of the slop estimate
+    \[
+    \begin{split}
+        \overline{L^2}&=\frac{1}{6}[(0.0215)^2+(0.0431)^2+(0.0645)^2+(0.0853)^2+(0.1060)^2+(0.1278)^2]\\[0.2cm]
+        &\approx 0.00689 m^2,\\[0.4cm]
+        \overline{L}^2&=[\frac{1}{6}[0.0215+0.0431+0.0645+0.0853+0.1060+0.1278]^2\\[0.2cm]
+        &\approx 0.00558 m^2,\\[0.4cm]
+        \sigma_{k_1}&=\frac{\sigma_y}{\sqrt{L^2}-\overline{L}^2}=\frac{5.17\times10^{-4}}{\sqrt{0.00689}-0.00558}\\[0.2cm]
+        &=6.68\times10^{-3} kg/m^2
+    \end{split}
+    \]
