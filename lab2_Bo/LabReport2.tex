@@ -1,0 +1,207 @@
+\documentclass[12pt]{article}
+\usepackage[letterpaper]{geometry}
+\usepackage{indentfirst}
+\usepackage{tabularx}
+\usepackage{graphicx}
+\usepackage{multirow}
+\usepackage{amsmath}
+\usepackage{siunitx}
+\setlength{\parindent}{2em}
+\geometry{left=1.0in, bottom=1.5in, left=1.0in, right=1.0in}
+\begin{document}
+    \thispagestyle{empty}
+	\renewcommand\thesection{\Roman{section}}
+    \input{cover}
+    \newpage
+    \section{Introduction}
+    \subsection{objective}
+        The objective of the exercise is to measure the fluid viscosity,
+        which is one of the most important properties of fluids, determining the
+        fluid’s flow, by using a common and simple method called Stokes' method.
+    \subsection{Theoretical Background}
+        When an object moves in a fluid, its motion is hindered by a drag force acting in the opposite 
+        direction of the movement of object.Also, the magnitude of the drag force is related to serval 
+        components such as, the shape, speed of the object as well as the internal friction in the fluid.
+        Usually, we use coefficient $\eta$ to quantify the internal friction in the fluid, and the $\eta$
+        is konwn as the viscosity coefficient. The drag force of a spherical object with radius R moving at 
+        speed v in an infinite volume of a liquid is given by,
+        \begin{equation} \label{F1}
+        F_1=6\pi\eta vR
+        \end{equation}
+        And the buoyancy force is,
+        $$F_3=\frac{4}{3}\pi R^3\rho_1g$$   
+        Where $\rho$ is the density of fluid and $g$ is the acceleration due to gravity.The weight of the object is
+        $$F_3=\frac{4}{3}\pi R^3\rho_2g$$
+        After sometime, the ball will achieve equilibrum speed when the three force balance each other,
+        \begin{equation} \label{Balance}
+            F_1+F_2=F_3.
+        \end{equation}
+        Together with the euation 1, we get,
+        \begin{equation}\label{3}
+                    \eta=\frac{2}{9}gR^2\frac{\rho_2-\rho_1}{v_t}.
+        \end{equation}
+        Because of the constant velocity, the $\eta$ can also be written as
+        \begin{equation} \label{eta}
+            \eta=\frac{2}{9}gR^2\frac{(\rho_2-\rho_1)t}{s},
+        \end{equation}
+        where $s$ is the distance travled in time $t$ with reaching the terminal speed.\\
+        Since the volume of the fluid is not infinite,the results are affected by some boundary effect due to the presence of the container.Therefore the formula for the crrected magnitude is giben by,
+        $$F_1=6\pi\eta vR(1+2.4\frac{R}{R_c})$$
+        Where $R_c$ is the radius of the infinitely long cylindrical container.Consequently, we get,
+        \begin{equation} \label{eta2}
+                \eta=\frac{2}{9}gR^2\frac{(\rho_2-\rho_1)t}{s}\frac{1}{1+2.4\frac{R}{R_c}}.
+        \end{equation}
+    \section{Apparatus and Measurement procedure}
+    \subsection{Experimental Setup}
+    This exercise requires a Stokes' viscosity measurement device  with castor oil and some small metal balls. There are also a number of measurement devices including micrometer, calliper, densimeter, electronic scales, stopwatch, and thermometer.
+    \begin{figure}[htbp]
+        \centering
+        \includegraphics[width=0.8\linewidth]{1.png}
+        \caption{Stokes’ viscosity measurement apparatus}
+        \label{apparatus}
+    \end{figure}
+    \subsection{Measurement}
+        \subsubsection{Adjustment of the Stokes' viscosity measurement device}
+            \begin{enumerate}
+                \item Make the plumb aiming at the center of the base by adjusting the knobs beneath the base.
+                \item Turn on the two lasers and make the beams parallel and aim at the plumb line.
+                \item Remove the plumb and place the flask with castor oil at the center of the base.
+                \item Place the guiding pipe on the top of the device.
+                \item Put a metal ball into it and check whether the ball can block the beams. If not, repeat. 
+            \end{enumerate}
+        \subsubsection{Measurement of the (constant) velocity of a falling ball}
+            \begin{enumerate}
+                \item Measure the vertical distance $s$ between the two laser beams at least three times.
+                \item Put a metal ball into the guiding pipe. Record the time it travels between the two beams for at least six times.
+            \end{enumerate}
+        \subsubsection{Measurement of the ball density $\rho_2$}
+            \begin{enumerate}
+                \item Use electronic scales to measure the mass of 40 metal balls. Calculate the average.
+                \item Use a micrometer to measure the diameter of the ball for ten times.
+                \item Calculate the density $\rho_2$.
+            \end{enumerate}
+        \subsubsection{Other measurements}
+            Measure of the density $\rho_1$ of the castor oil by using the provided densimeter (one
+            measurement). Use a calliper to measure the inner diameter D of the graduated
+            flask for six times. Read the ambient temperature from the thermometer placed in
+            the lab.  
+        \section{Results}
+        \subsection{Measurement of the Distance}
+        \begin{table}[h]
+        \centering
+        \begin{tabular}{|c|c|c|c|}
+            \hline
+            \multicolumn{4}{|c|}{$Distance\ S\ [\times10^{-3}m] \pm\ 0.10\ [\times10^{-3}m]$}\\
+            \hline
+            $S_1$ &110.0 & 263.0 &153\\
+            \hline
+            $S_2$ &140.0 &292.0 &152\\
+            \hline
+            $S_3$ &111.0 &264.5 &153.5\\     
+            \hline
+        \end{tabular}\\
+        \caption{Distance measurement data}
+        \label{distance}
+        \end{table}
+        The average value of the vertical distance of two beams is hence calculated by,
+        $$\bar{S}=\frac{1}{3}\sum_{i=1}^{3}S_i=(152.8\pm )\times10^{-3}m$$title
+        \subsection{Measurement of the Time}
+        \begin{table}[htbp]
+        \centering
+        \begin{tabular}{|c|c|}
+            \hline
+            \multicolumn{2}{|c|}{Measurement $Time\ t\ [s] \pm\ 0.01\ [s]$}\\
+            \hline
+            $t_1$ & 6.97\\
+            \hline
+            $t_2$ & 7.12\\
+            \hline
+            $t_3$ & 7.28\\
+            \hline
+            $t_4$ & 7.35\\
+            \hline
+            $t_5$ & 6.94\\
+            \hline
+            $t_6$ & 7.00\\
+            \hline
+        \end{tabular}\\
+        \caption{Time measurement data}
+        \label{time}
+    \end{table}
+    The average value of the time is given as
+    \[
+        \bar{t}=\frac{1}{6}\sum_{i=1}^{6}t_i=7.11\pm s
+    \]
+    \subsection{Diameter of ball}
+        \begin{table}[htbp]
+        \centering
+        \begin{tabular}{|c|c|c|c|}
+            \hline
+            \multicolumn{4}{|c|}{ $Diameters\ d[\times10^{-3}m] \pm 0.004[\times10^{-3}m]$}\\
+            \hline
+            $d_1$ &1.945 &$d_6$ &1.955\\
+            \hline
+            $d_2$ &1.945 &$d_7$ &1.940\\
+            \hline
+            $d_3$ &1.950 &$d_8$ &1.940\\
+            \hline
+            $d_4$ &1.955 &$d_9$ &1.950\\
+            \hline
+            $d_5$ &1.950 &$d_{10}$ &1.935\\         
+            \hline
+        \end{tabular}\\
+        \caption{Measurement data for diameters of the balls}
+        \label{balldiameter}
+    \end{table}     
+    With the initial reading, $d_0 = -0.040 mm$
+    The average value of the diameter of a ball is hence calculated as
+    \[
+        \bar{d}=\frac{1}{10}\sum_{i=1}^{10}d_i=(1.986\pm )\times10^{-3}
+    \]
+    \subsection{Inner Diameter of the Flask}
+    \begin{table}[htbp]
+        \centering
+        \begin{tabular}{|c|c|}
+            \hline
+            \multicolumn{2}{|c|}{$Diameters\ D[\times10^{-3}m] \pm 0.02[\times10^{-3}m]$}\\
+            \hline
+            $D_1$ & 61.70\\
+            \hline
+            $D_2$ & 61.78\\
+            \hline
+            $D_3$ & 61.68\\
+            \hline
+            $D_4$ & 61.70\\
+            \hline
+            $D_5$ & 61.64\\
+            \hline
+            $D_6$ & 61.68\\ 
+            \hline          
+        \end{tabular}\\
+        \caption{Measurement data for the inner diameter of the flask}
+        \label{innerdiameter}
+    \end{table}
+    The average value of the inner diameter of the flask is hence calculated 
+    \[
+        \bar{D}=\frac{1}{10}\sum_{i=1}^{10}D_i=(61.69\pm0.21)\times10^{-3}\ m
+    \]
+    \subsection{Other physicals quantifies}
+    \begin{table}[htbp]
+        \centering
+        \begin{tabular}{ll}
+            \hline\hline
+            Density of the castor oil & $\rho_1=0.956\pm 0.001g/cm^3$\\
+            \hline
+            Mass of 40 metal balls & $m=1.359\pm 0.001\times10^{-3}kg$\\
+            \hline      
+            Temperature in the lab & $T=26\pm \SI{2}{\degreeCelsius}$\\
+            \hline
+            Acceleration due to gravity in the lab & $g=9.794m/s^2$\\        
+            \hline\hline
+        \end{tabular}\\
+        \caption{Values of other physical quantities}
+        \label{other}
+    \end{table}
+    \section{Uncertainy Analysis}
+    
+\end{document}
