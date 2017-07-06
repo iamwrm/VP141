@@ -32,10 +32,12 @@ l3(1,:)=[];
 
 k1=(mean(l1.*W)-mean(l1).*mean(W))/(mean(l1.^2)-mean(l1).^2);
 [K]=polyfit(l1,W,1);
-k1=K(1)
-b1=K(2)
+k1=K(1);
+b1=K(2);
 figure;
 hold on;
+l1;
+W;
 errx = 1e-4*ones(size(l1));
 erry = 9.794e-5*ones(size(W));
 errorbar(l1,W,erry,erry,errx,errx);
@@ -45,16 +47,17 @@ ylabel('Weight(N)');
 title('Fitting curve of k_1');
 plot(l1,k1.*l1+b1,'r');
 legend('Experimental data','Fitting curve');
+grid;
 
 sigmay=sqrt(1/4.*sum((W-l1.*k1-b1).^2));
 sigmak=sigmay./(sqrt(mean(l1.^2)-mean(l1).^2));
-uk=sigmak*2.57/2;
+uk=sigmak*2.57/2
 sigmab=sqrt(mean(l1.^2)).*sigmak;
 ub=sigmab*2.57/sqrt(6);
 
 [K]=polyfit(l2,W,1);
-k2=K(1)
-b2=K(2)
+k2=K(1);
+b2=K(2);
 figure;
 hold on;
 errx = 1e-4*ones(size(l2));
@@ -66,16 +69,17 @@ ylabel('Weight(N)');
 title('Fitting curve of k_2');
 plot(l2,k2.*l2+b2,'r');
 legend('Experimental data','Fitting curve');
+grid;
 
 sigmay=sqrt(1/4.*sum((W-l2.*k2-b2).^2));
 sigmak=sigmay./(sqrt(mean(l2.^2)-mean(l2).^2));
-uk=sigmak*2.57/2;
+uk=sigmak*2.57/2
 sigmab=sqrt(mean(l2.^2)).*sigmak;
 ub=sigmab*2.57/sqrt(6);
 
 [K]=polyfit(l3,W,1);
-k3=K(1)
-b3=K(2)
+k3=K(1);
+b3=K(2);
 figure;
 hold on;
 errx = 1e-4*ones(size(l3));
@@ -87,13 +91,13 @@ ylabel('Weight(N)');
 title('Fitting curve of k_3');
 plot(l3,k3.*l3+b3,'r');
 legend('Experimental data','Fitting curve');
-
+grid;
 
 sigmay=sqrt(1/4.*sum((W-l3.*k3-b3).^2));
-sigmak=sigmay./(sqrt(mean(l3.^2)-mean(l3).^2))
-uk=sigmak*2.57/2
-sigmab=sqrt(mean(l3.^2)).*sigmak
-ub=sigmab*2.57/sqrt(6)
+sigmak=sigmay./(sqrt(mean(l3.^2)-mean(l3).^2));
+uk=sigmak*2.57/2;
+sigmab=sqrt(mean(l3.^2)).*sigmak;
+ub=sigmab*2.57/sqrt(6);
 
 
 

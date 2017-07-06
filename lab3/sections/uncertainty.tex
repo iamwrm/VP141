@@ -1,10 +1,22 @@
 \section{Measurement Uncertainty Analysis}
 \subsection{Uncertainty of spring constants}
-    The uncertainty of $\Delta_L=L_i-L_0$ is 
+    To determine the uncertainty of $\Delta_L=L_i-L_0$, we need that
     \[
-        u_{\Delta_L}=\frac{d\Delta_L}{dL_i}\cdot u_{L_i}=1\cdot 1\times10^{-4}=1\times10^{-4}m
+    \begin{split}
+        \frac{\partial \Delta_L}{\partial L_i}&=1,\\
+        u_{L_i}&=\Delta_{dev}=1\times10^{-4}m,\\
+        u_{\Delta_L}&=\sqrt{(\frac{\partial \Delta_L}{\partial L_i})^2\cdot (u_{L_i})^2}=\sqrt{(1)^2\times (1\times10^{-4})^2}=1\times10^{-4}m.\\
+    \end{split}
     \].
-    Since $W$ is calculated by $W=mg$, then the uncertainty of $W$ is $u_{W}=\frac{dW}{dm}\cdot u_m=9.794u_m=9.794\times10^{-5}N$, which is shown in Figure \ref{k_1}, \ref{k_2} and \ref{k_3}.
+    Similarly, $u_{W}$ of $W=mg$ is
+    \[
+    \begin{split}
+        \frac{\partial W}{\partial m}&=g=9.794kg\cdot m/s^2,\\
+        u_m&=\Delta_{dev}=1\times10^{-5}kg,\\
+        u_{W}&=\sqrt{(\frac{\partial W}{\partial m})^2\cdot (u_m)^2}=\sqrt{(9.794)^2\times (1\times10^{-5})^2}\approx 0.1\times10^{-3}N.\\
+    \end{split}
+    \].
+    The error of $\Delta_L$ and $W$ will be shown in errorbar.
 \subsubsection{Uncertainty of fitting spring constants}
     The standard deviation of least-squares method is calculated by
     \[
@@ -25,43 +37,46 @@
         \overline{\Delta_L}^2&=[\frac{1}{6}[0.0215+0.0431+0.0645+0.0853+0.1060+0.1278]^2\\[0.2cm]
         &\approx 0.00558 m^2,\\[0.4cm]
         \sigma_{k_1}&=\frac{\sigma_W}{\sqrt{\overline{\Delta_L^2}-\overline{\Delta_L}^2}}=\frac{5.17\times10^{-4}}{\sqrt{0.00689-0.00558}}\\[0.2cm]
-        &\approx14.3\times10^{-3} kg/s^2,
+        &\approx14.3\times10^{-3} kg/s^2.
     \end{split}
     \]
-    and the standard deviation of the intercept estimate
-    \[
-        \sigma_{b_1}=\sqrt{\overline{\Delta_L^2}}\sigma_{k_1}=\sqrt{0.00689}\times14.3\times10^{-3}\approx1.19\times10^{-3}N
-    \]
+    %and the standard deviation of the intercept estimate
+    %\[
+    %   \sigma_{b_1}=\sqrt{\overline{\Delta_L^2}}\sigma_{k_1}=\sqrt{0.00689}\times14.3\times10^{-3}\approx1.19\times10^{-3}N
+    %\]
     Thus, the 0.95-confidence deviation is 
     \[
     \begin{split}
         u_{k_1}&=\frac{t_{0.95}}{\sqrt{n-2}}\sigma_{k_1}=\frac{2.57}{\sqrt{6-2}}\times14.3\times10^{-3}= 0.0184\approx 0.02kg/s^2.\\[0.4cm]
-        u_{b_1}&=\frac{t_0.95}{\sqrt{n}}\sigma_{b_1}=\frac{2.57}{\sqrt{6}}\times1.19\times10^{-3}\approx12.5\times10^{-4}N.
+        %u_{b_1}&=\frac{t_0.95}{\sqrt{n}}\sigma_{b_1}=\frac{2.57}{\sqrt{6}}\times1.19\times10^{-3}\approx12.5\times10^{-4}N.
     \end{split}
     \]
     
-    Similarly, we obtain $u_{k_2}$, $u_{b_2}$, $u_{k_3}$ and $u_{b_3}$.
+    Similarly, we obtain $u_{k_2}$ and $u_{k_3}$.
     \[
     \begin{split}
         \sigma_{k_2}&=0.008kg/s^2,\quad
         u_{k_2}=\frac{t_{0.95}}{\sqrt{n-2}}\sigma_{k_2}=0.01kg/s^2.\\
-        \sigma_{b_2}&=0.006N,\quad\quad\quad
-        u_{b_2}=\frac{t_{0.95}}{\sqrt{n}}\sigma_{b_2}=0.007N.\\
+        %\sigma_{b_2}&=0.006N,\quad\quad\quad
+        %u_{b_2}=\frac{t_{0.95}}{\sqrt{n}}\sigma_{b_2}=0.007N.\\
         \sigma_{k_3}&=0.013kg/s^2,\quad
         u_{k_3}=\frac{t_{0.95}}{\sqrt{n-2}}\sigma_{k_3}=0.017kg/s^2.\\
-        \sigma_{b_3}&=0.002N,\quad\quad\quad
-        u_{b_3}=\frac{t_{0.95}}{\sqrt{n}}\sigma_{b_3}=0.002N.\\
+        %\sigma_{b_3}&=0.002N,\quad\quad\quad
+        %u_{b_3}=\frac{t_{0.95}}{\sqrt{n}}\sigma_{b_3}=0.002N.\\
     \end{split}
     \]
     
-    The relative uncertainty can be calculated by $u_r=u/\bar{X}$.
-
+    The relative uncertainty can be calculated by $u_r=u/\bar{X}\times100\%$.
+    For example,
+    \[
+        u_{r,k_1}=\frac{0.02}{2.22}\times100\%=0.9\%.
+    \]
     Finally, the experimentally found $k_1$, $k_2$ and $k_3$ is
     \[
     \begin{split}
-        k_1&= 2.22\pm 0.02 kg/s^2,\quad u_{rk_1}=0.9\%\\
-        k_2&= 2.25\pm 0.01 kg/s^2,\quad u_{rk_2}=0.4\%\\
-        k_3&= 1.11\pm 0.017kg/s^2,\quad u_{rk_3}=1.5\%
+        k_1&= 2.22\pm 0.02 kg/s^2,\quad u_{r,k_1}=0.9\%\\
+        k_2&= 2.25\pm 0.01 kg/s^2,\quad u_{r,k_2}=0.4\%\\
+        k_3&= 1.11\pm 0.017kg/s^2,\quad u_{r,k_3}=1.5\%
     \end{split}
     \]
 
@@ -97,13 +112,58 @@
         k_3^{'}=1.12+0.006 kg/s^2,\quad u_{rk_3^{'}}=0.5\%.
     \]
     
-    Compared with $k_3$ we obtain from curve fitting, we can calculate the deviation $u^{'}$ between $k_3$ and $k_3^{'}$ and the relative deviation $u_r^{'}$.
+    Compared with $k_3$ we obtain from curve fitting, we can calculate the deviation $\Delta_{k_3}$ between $k_3$ and $k_3^{'}$ and the relative deviation $\Delta_{r,k_3}$.
     \[ 
     \begin{split}
-        u^{'}&=k_3-k_3^{'}=1.11-1.12=-0.01kg/s^2,\\
-        u_r^{'}&=\frac{k_3-k_3^{'}}{k_3^{'}}=\frac{1.11-1.12}{1.12}=-0.9\%.
+        \Delta_{k_3}&=k_3-k_3^{'}=1.11-1.12=-0.01kg/s^2,\\
+        \Delta_{r,k_3}&=\frac{k_3-k_3^{'}}{k_3^{'}}=\frac{1.11-1.12}{1.12}=-0.9\%.
     \end{split}
     \]
-    Recall that the 0.95-confidence interval of $k_3$ is (1.093,1.127). The theoretical value $k_3^{'}$ is indeed in this interval, which means the uncertainty analysis of $k_3$ is reasonable.\\
+
+    Recall that the 0.95-confidence interval of $k_3$ is $(1.093,1.127)$. The theoretical value $k_3^{'}=1.12+0.006 kg/s^2$ is indeed in this interval, which means the uncertainty analysis of $k_3$ is reasonable.\\
     
-\subsection{Uncertainty of}
+\subsection{Uncertainty of }
+    From the formula of oscillation period $T=2\pi\sqrt{\frac{M}{k}}$ we know that the slope of $T^2\ vs.\ M$ is
+    \begin{equation}\label{slope}
+        slope=\frac{T^2}{M}=\frac{4\pi^2}{k},
+    \end{equation}
+    where k is the effective spring constant. In this experiment, the effective spring constant can be calculated by
+    \[ 
+    \begin{split}
+        F&=k_1\Delta x+k_2\Delta x,\\
+        F&=k_{eff}\Delta x.
+    \end{split}
+    \]
+    Thus we get $k_{eff}=k_1+k_2$. We take the reults of $k_1$ and $k_2$ as the theoretical value, then
+    \[
+        k_{eff}=k_1+k_2=2.22+2.25=4.47kg/s^2.
+    \]
+    Plugging it into Eq. \ref{slope}, then we get the theoretical slope $slope_t=4\times 3.14^2/4.47=8.82s^2/kg$
+    By curve fitting, we get the slopes
+    \[
+    \begin{split}
+        slope_{hor}&=8.72\pm 0.05s^2/kg,\\
+        slope_{inc1}&=8.73\pm 0.14s^2/kg,\\
+        slope_{inc2}&=8.76\pm 0.17s^2/kg,
+    \end{split}
+    \]
+    where the uncertainty is calcualted by $t_0.95/\sqrt{6-2}\times \sigma$.
+    Hence the experimental value of the slope is $slope_e=\overline{slope}=8.74s^/kg$.
+    Similarly, we get the propagated and relative uncertainty of slope, which is
+    \[
+    \begin{split}
+        u_{slope}&=\sqrt{(\frac{\partial slope}{\partial slope_{hor}})^2\cdot(u_{slope_{hor}})^2+(\frac{\partial slope}{\partial slope_{inc1}})^2\cdot(u_{slope_{inc1}})^2+(\frac{\partial slope}{\partial slope_{inc2}})^2\cdot(u_{slope_{inc2}})^2}\\
+        &=\sqrt{(\frac{1}{3})^2\cdot(0.05)^2+(\frac{1}{3})^2\cdot(0.14)^2+(\frac{1}{3})^2\cdot(0.17)^2}=0.08s^2/kg.\\
+        u_{r,slope}&=\frac{u_{slope}}{\overline{slope}}\times100\%=\frac{0.08}{8.74}\times100\%=0.9\%.
+    \end{split}
+    \]
+
+    Hence, $slope_e=\overline{slope}=8.74\pm 0.08s^/kg, \quad u_{r,slope}=0.9\%$. Compared with the "theoretical" value of $slope_t=8.82s^2/kg$, we calculate the deviation $\Delta_slope$ and relative deviation $\Delta_{r,slope}$
+    \[
+    \begin{split}
+        \Delta_slope&=8.74-8.82=-0.08s^2/kg,\\
+        \Delta_{r,slope}&=\frac{8.74-8.82}{8.82}\times 100\%=-0.9\%.
+    \end{split}
+    \]
+    The theoretical value is just on the boundary of uncertainty interval. It shows that our experimental values are relatively reliable.
+
