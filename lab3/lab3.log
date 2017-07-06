@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.5.24)  6 JUL 2017 19:47
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.5.24)  6 JUL 2017 21:34
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -596,8 +596,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 47--49
 
 [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./images/logo.png>])
-(./sections/intro.tex
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./images/logo.png>]
+(./lab3.toc)
+\tf@toc=\write3
+\openout3 = `lab3.toc'.
+
+ [1]) (./sections/intro.tex
 Underfull \hbox (badness 10000) in paragraph at lines 2--4
 
  []
@@ -607,12 +611,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 9--11
 
  []
 
-<images/1.png, id=11, 945.5325pt x 193.72375pt>
+<images/1.png, id=17, 945.5325pt x 193.72375pt>
 File: images/1.png Graphic file (type png)
  <use images/1.png>
 Package pdftex.def Info: images/1.png used on input line 16.
 (pdftex.def)             Requested size: 211.63913pt x 43.36243pt.
- [1 <./images/1.png>]
+ [2
+
+ <./images/1.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 32--33
 
  []
@@ -632,7 +638,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 6--12
 
  []
 
-<images/2.png, id=18, 301.125pt x 426.59375pt>
+<images/2.png, id=21, 301.125pt x 426.59375pt>
 File: images/2.png Graphic file (type png)
  <use images/2.png>
 Package pdftex.def Info: images/2.png used on input line 16.
@@ -641,25 +647,25 @@ Package pdftex.def Info: images/2.png used on input line 16.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[2]
+[3]
 Underfull \hbox (badness 10000) in paragraph at lines 26--28
 
  []
 
-<images/3.png, id=24, 494.84875pt x 367.3725pt>
+<images/3.png, id=27, 494.84875pt x 367.3725pt>
 File: images/3.png Graphic file (type png)
  <use images/3.png>
 Package pdftex.def Info: images/3.png used on input line 32.
 (pdftex.def)             Requested size: 249.1227pt x 184.9429pt.
- [3 <./images/2.png> <./images/3.png>] <images/4.png, id=28, 292.09125pt x 208.
+ [4 <./images/2.png> <./images/3.png>] <images/4.png, id=31, 292.09125pt x 208.
 78pt>
 File: images/4.png Graphic file (type png)
 
 <use images/4.png>
 Package pdftex.def Info: images/4.png used on input line 43.
 (pdftex.def)             Requested size: 119.41945pt x 85.35826pt.
-) (./sections/measurements.tex [4 <./images/4.png>])
-(./sections/results.tex [5]
+) (./sections/measurements.tex [5 <./images/4.png>])
+(./sections/results.tex [6]
 Package epstopdf Info: Source file: <images/k1.eps>
 (epstopdf)                    date: 2017-07-05 16:15:06
 (epstopdf)                    size: 25691 bytes
@@ -671,7 +677,7 @@ Package epstopdf Info: Source file: <images/k1.eps>
 (epstopdf)             \includegraphics on input line 84.
 Package epstopdf Info: Output file is already uptodate.
 
-<images/k1-eps-converted-to.pdf, id=35, 421.575pt x 316.18124pt>
+<images/k1-eps-converted-to.pdf, id=39, 421.575pt x 316.18124pt>
 File: images/k1-eps-converted-to.pdf Graphic file (type pdf)
 
 <use images/k1-eps-converted-to.pdf>
@@ -685,7 +691,7 @@ Overfull \hbox (66.28288pt too wide) in paragraph at lines 84--85
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[6] [7] <images/k1info.png, id=46, 324.21124pt x 188.705pt>
+[7] [8] <images/k1info.png, id=49, 324.21124pt x 188.705pt>
 File: images/k1info.png Graphic file (type png)
 
 <use images/k1info.png>
@@ -702,7 +708,7 @@ Package epstopdf Info: Source file: <images/k2.eps>
 (epstopdf)             \includegraphics on input line 111.
 Package epstopdf Info: Output file is already uptodate.
 
-<images/k2-eps-converted-to.pdf, id=47, 421.575pt x 316.18124pt>
+<images/k2-eps-converted-to.pdf, id=50, 421.575pt x 316.18124pt>
 File: images/k2-eps-converted-to.pdf Graphic file (type pdf)
 
 <use images/k2-eps-converted-to.pdf>
@@ -710,7 +716,7 @@ Package pdftex.def Info: images/k2-eps-converted-to.pdf used on input line 111.
 
 (pdftex.def)             Requested size: 227.6278pt x 170.71652pt.
 
-<images/k2info.png, id=48, 327.2225pt x 186.6975pt>
+<images/k2info.png, id=51, 327.2225pt x 186.6975pt>
 File: images/k2info.png Graphic file (type png)
  <use images/k2info.png>
 Package pdftex.def Info: images/k2info.png used on input line 116.
@@ -722,8 +728,8 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[8 <./images/k1-eps-converted-to.pdf> <./images/k1info.png>] [9 <./images/k2-ep
-s-converted-to.pdf> <./images/k2info.png>]
+[9 <./images/k1-eps-converted-to.pdf> <./images/k1info.png>] [10 <./images/k2-e
+ps-converted-to.pdf> <./images/k2info.png>]
 Package epstopdf Info: Source file: <images/k3.eps>
 (epstopdf)                    date: 2017-07-05 16:14:44
 (epstopdf)                    size: 24985 bytes
@@ -735,7 +741,7 @@ Package epstopdf Info: Source file: <images/k3.eps>
 (epstopdf)             \includegraphics on input line 140.
 Package epstopdf Info: Output file is already uptodate.
 
-<images/k3-eps-converted-to.pdf, id=73, 421.575pt x 316.18124pt>
+<images/k3-eps-converted-to.pdf, id=76, 421.575pt x 316.18124pt>
 File: images/k3-eps-converted-to.pdf Graphic file (type pdf)
 
 <use images/k3-eps-converted-to.pdf>
@@ -743,7 +749,7 @@ Package pdftex.def Info: images/k3-eps-converted-to.pdf used on input line 140.
 
 (pdftex.def)             Requested size: 265.56148pt x 199.16928pt.
 
-<images/k3info.png, id=74, 312.16624pt x 190.7125pt>
+<images/k3info.png, id=77, 312.16624pt x 190.7125pt>
 File: images/k3info.png Graphic file (type png)
  <use images/k3info.png>
 Package pdftex.def Info: images/k3info.png used on input line 145.
@@ -756,7 +762,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 153--154
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[10 <./images/k3-eps-converted-to.pdf> <./images/k3info.png>]
+[11 <./images/k3-eps-converted-to.pdf> <./images/k3info.png>]
 Package epstopdf Info: Source file: <images/tm.eps>
 (epstopdf)                    date: 2017-07-05 16:13:10
 (epstopdf)                    size: 24281 bytes
@@ -768,7 +774,7 @@ Package epstopdf Info: Source file: <images/tm.eps>
 (epstopdf)             \includegraphics on input line 205.
 Package epstopdf Info: Output file is already uptodate.
 
-<images/tm-eps-converted-to.pdf, id=86, 421.575pt x 316.18124pt>
+<images/tm-eps-converted-to.pdf, id=89, 421.575pt x 316.18124pt>
 File: images/tm-eps-converted-to.pdf Graphic file (type pdf)
 
 <use images/tm-eps-converted-to.pdf>
@@ -776,7 +782,7 @@ Package pdftex.def Info: images/tm-eps-converted-to.pdf used on input line 205.
 
 (pdftex.def)             Requested size: 341.45457pt x 256.0748pt.
 
-<images/tminfo.png, id=87, 297.11pt x 184.69pt>
+<images/tminfo.png, id=90, 297.11pt x 184.69pt>
 File: images/tminfo.png Graphic file (type png)
  <use images/tminfo.png>
 Package pdftex.def Info: images/tminfo.png used on input line 210.
@@ -795,7 +801,7 @@ Package epstopdf Info: Source file: <images/tmi1.eps>
 to.pdf images/tmi1.eps>
 (epstopdf)             \includegraphics on input line 229.
 Package epstopdf Info: Output file is already uptodate.
-<images/tmi1-eps-converted-to.pdf, id=88, 421.575pt x 316.18124pt>
+<images/tmi1-eps-converted-to.pdf, id=91, 421.575pt x 316.18124pt>
 File: images/tmi1-eps-converted-to.pdf Graphic file (type pdf)
 
 <use images/tmi1-eps-converted-to.pdf>
@@ -806,7 +812,7 @@ Package pdftex.def Info: images/tmi1-eps-converted-to.pdf used on input line 22
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<images/tmi1info.png, id=89, 291.0875pt x 183.68625pt>
+<images/tmi1info.png, id=92, 291.0875pt x 183.68625pt>
 File: images/tmi1info.png Graphic file (type png)
 
 <use images/tmi1info.png>
@@ -826,7 +832,7 @@ Package epstopdf Info: Source file: <images/tmi2.eps>
 to.pdf images/tmi2.eps>
 (epstopdf)             \includegraphics on input line 254.
 Package epstopdf Info: Output file is already uptodate.
-<images/tmi2-eps-converted-to.pdf, id=90, 421.575pt x 316.18124pt>
+<images/tmi2-eps-converted-to.pdf, id=93, 421.575pt x 316.18124pt>
 File: images/tmi2-eps-converted-to.pdf Graphic file (type pdf)
 
 <use images/tmi2-eps-converted-to.pdf>
@@ -837,7 +843,7 @@ Package pdftex.def Info: images/tmi2-eps-converted-to.pdf used on input line 25
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<images/tmi2info.png, id=91, 282.05376pt x 189.70876pt>
+<images/tmi2info.png, id=94, 282.05376pt x 189.70876pt>
 File: images/tmi2info.png Graphic file (type png)
 
 <use images/tmi2info.png>
@@ -847,12 +853,12 @@ Package pdftex.def Info: images/tmi2info.png used on input line 259.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[11 <./images/tm-eps-converted-to.pdf>] [12 <./images/tminfo.png> <./images/tmi
+[12 <./images/tm-eps-converted-to.pdf>] [13 <./images/tminfo.png> <./images/tmi
 1-eps-converted-to.pdf>]
 
-LaTeX Warning: Text page 13 contains only floats.
+LaTeX Warning: Text page 14 contains only floats.
 
-[13 <./images/tmi1info.png> <./images/tmi2-eps-converted-to.pdf>]
+[14 <./images/tmi1info.png> <./images/tmi2-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <images/at.eps>
 (epstopdf)                    date: 2017-07-06 17:19:45
 (epstopdf)                    size: 25140 bytes
@@ -864,7 +870,7 @@ Package epstopdf Info: Source file: <images/at.eps>
 (epstopdf)             \includegraphics on input line 281.
 Package epstopdf Info: Output file is already uptodate.
 
-<images/at-eps-converted-to.pdf, id=117, 421.575pt x 316.18124pt>
+<images/at-eps-converted-to.pdf, id=120, 421.575pt x 316.18124pt>
 File: images/at-eps-converted-to.pdf Graphic file (type pdf)
 
 <use images/at-eps-converted-to.pdf>
@@ -872,13 +878,13 @@ Package pdftex.def Info: images/at-eps-converted-to.pdf used on input line 281.
 
 (pdftex.def)             Requested size: 265.56148pt x 199.16928pt.
 
-<images/atinfo.png, id=118, 296.10625pt x 177.66376pt>
+<images/atinfo.png, id=121, 296.10625pt x 177.66376pt>
 File: images/atinfo.png Graphic file (type png)
  <use images/atinfo.png>
 Package pdftex.def Info: images/atinfo.png used on input line 287.
 (pdftex.def)             Requested size: 237.11122pt x 142.26378pt.
 
-[14 <./images/tmi2info.png> <./images/at-eps-converted-to.pdf>] [15 <./images/a
+[15 <./images/tmi2info.png> <./images/at-eps-converted-to.pdf>] [16 <./images/a
 tinfo.png>]
 Package epstopdf Info: Source file: <images/va.eps>
 (epstopdf)                    date: 2017-07-06 17:19:03
@@ -890,7 +896,7 @@ Package epstopdf Info: Source file: <images/va.eps>
 .pdf images/va.eps>
 (epstopdf)             \includegraphics on input line 340.
 Package epstopdf Info: Output file is already uptodate.
- <images/va-eps-converted-to.pdf, id=130, 429.605pt x 339.2675pt>
+ <images/va-eps-converted-to.pdf, id=133, 429.605pt x 339.2675pt>
 File: images/va-eps-converted-to.pdf Graphic file (type pdf)
 
 <use images/va-eps-converted-to.pdf>
@@ -898,56 +904,60 @@ Package pdftex.def Info: images/va-eps-converted-to.pdf used on input line 340.
 
 (pdftex.def)             Requested size: 216.17201pt x 170.71652pt.
 
-<images/vainfo.png, id=131, 295.1025pt x 178.6675pt>
+<images/vainfo.png, id=134, 295.1025pt x 178.6675pt>
 File: images/vainfo.png Graphic file (type png)
  <use images/vainfo.png>
 Package pdftex.def Info: images/vainfo.png used on input line 345.
 (pdftex.def)             Requested size: 234.9881pt x 142.26378pt.
 )
-(./sections/uncertainty.tex [16 <./images/va-eps-converted-to.pdf> <./images/va
+(./sections/uncertainty.tex [17 <./images/va-eps-converted-to.pdf> <./images/va
 info.png>]
 Overfull \hbox (12.56207pt too wide) in paragraph at lines 31--31
 [] 
  []
 
-[17] [18]
+[18] [19]
 Underfull \hbox (badness 10000) in paragraph at lines 124--125
 
  []
 
-[19] [20]
+[20] [21]
 Overfull \hbox (1.61905pt too wide) in paragraph at lines 198--198
 [] 
  []
 
-[21] [22] [23] [24]) [25] (./lab3.aux) ) 
+[22] [23] [24] [25]) (./sections/conclusion.tex [26]) (./sections/ref.tex)
+[27] (./lab3.aux)
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+ ) 
 Here is how much of TeX's memory you used:
- 12134 strings out of 494953
- 250148 string characters out of 6180977
- 268486 words of memory out of 5000000
- 15301 multiletter control sequences out of 15000+600000
+ 12145 strings out of 494953
+ 250280 string characters out of 6180977
+ 268502 words of memory out of 5000000
+ 15304 multiletter control sequences out of 15000+600000
  15980 words of font info for 59 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  38i,20n,42p,10375b,542s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texlive/texmf-dist/fonts/ty
-pe1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
-blic/amsfonts/cm/cmcsc10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
-amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfon
-ts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/
-cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.
-pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></u
-sr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/shar
-e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texli
-ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf
--dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fo
-nts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/ty
-pe1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/pub
-lic/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ams
-fonts/cm/cmti12.pfb>
-Output written on lab3.pdf (26 pages, 490444 bytes).
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></us
+r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/sha
+re/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/tex
+live/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/t
+exmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-d
+ist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fon
+ts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type
+1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/publi
+c/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfo
+nts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/c
+mr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pf
+b></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr
+/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/
+texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
+Output written on lab3.pdf (28 pages, 498389 bytes).
 PDF statistics:
- 219 PDF objects out of 1000 (max. 8388607)
- 142 compressed objects within 2 object streams
+ 225 PDF objects out of 1000 (max. 8388607)
+ 146 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  106 words of extra memory for PDF output out of 10000 (max. 10000000)
 
