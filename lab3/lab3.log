@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.5.24)  6 JUL 2017 21:34
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.5.24)  6 JUL 2017 23:42
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -446,7 +446,11 @@ Package: enumerate 2015/07/23 v3.00 enumerate extensions (DPC)
 )
 (/usr/share/texlive/texmf-dist/tex/latex/tools/indentfirst.sty
 Package: indentfirst 1995/11/23 v1.03 Indent first paragraph (DPC)
-) (./lab3.aux)
+) (./lab3.aux
+
+LaTeX Warning: Label `foo2' multiply defined.
+
+)
 \openout1 = `lab3.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 16.
@@ -691,7 +695,7 @@ Overfull \hbox (66.28288pt too wide) in paragraph at lines 84--85
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[7] [8] <images/k1info.png, id=49, 324.21124pt x 188.705pt>
+[7] [8] <images/k1info.png, id=48, 324.21124pt x 188.705pt>
 File: images/k1info.png Graphic file (type png)
 
 <use images/k1info.png>
@@ -708,7 +712,7 @@ Package epstopdf Info: Source file: <images/k2.eps>
 (epstopdf)             \includegraphics on input line 111.
 Package epstopdf Info: Output file is already uptodate.
 
-<images/k2-eps-converted-to.pdf, id=50, 421.575pt x 316.18124pt>
+<images/k2-eps-converted-to.pdf, id=49, 421.575pt x 316.18124pt>
 File: images/k2-eps-converted-to.pdf Graphic file (type pdf)
 
 <use images/k2-eps-converted-to.pdf>
@@ -716,7 +720,7 @@ Package pdftex.def Info: images/k2-eps-converted-to.pdf used on input line 111.
 
 (pdftex.def)             Requested size: 227.6278pt x 170.71652pt.
 
-<images/k2info.png, id=51, 327.2225pt x 186.6975pt>
+<images/k2info.png, id=50, 327.2225pt x 186.6975pt>
 File: images/k2info.png Graphic file (type png)
  <use images/k2info.png>
 Package pdftex.def Info: images/k2info.png used on input line 116.
@@ -926,16 +930,25 @@ Overfull \hbox (1.61905pt too wide) in paragraph at lines 198--198
 [] 
  []
 
-[22] [23] [24] [25]) (./sections/conclusion.tex [26]) (./sections/ref.tex)
-[27] (./lab3.aux)
+[22] [23] [24] [25]) (./sections/conclusion.tex
+Underfull \hbox (badness 10000) in paragraph at lines 11--13
 
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 22--36
+
+ []
+
+[26]) (./sections/ref.tex) [27] (./lab3.aux)
+
+LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
  12145 strings out of 494953
  250280 string characters out of 6180977
- 268502 words of memory out of 5000000
+ 267544 words of memory out of 5000000
  15304 multiletter control sequences out of 15000+600000
  15980 words of font info for 59 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
@@ -954,7 +967,7 @@ mr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pf
 b></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr
 /share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/
 texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on lab3.pdf (28 pages, 498389 bytes).
+Output written on lab3.pdf (28 pages, 497807 bytes).
 PDF statistics:
  225 PDF objects out of 1000 (max. 8388607)
  146 compressed objects within 2 object streams
