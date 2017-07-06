@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.5.24)  5 JUL 2017 21:49
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.5.24)  6 JUL 2017 19:47
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -754,12 +754,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 153--154
  []
 
 
-LaTeX Warning: Reference `T' on page 10 undefined on input line 156.
-
-
-LaTeX Warning: Reference `T' on page 10 undefined on input line 156.
-
-
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [10 <./images/k3-eps-converted-to.pdf> <./images/k3info.png>]
@@ -807,7 +801,7 @@ File: images/tmi1-eps-converted-to.pdf Graphic file (type pdf)
 <use images/tmi1-eps-converted-to.pdf>
 Package pdftex.def Info: images/tmi1-eps-converted-to.pdf used on input line 22
 9.
-(pdftex.def)             Requested size: 303.50159pt x 227.62204pt.
+(pdftex.def)             Requested size: 227.6278pt x 170.71652pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
@@ -853,33 +847,30 @@ Package pdftex.def Info: images/tmi2info.png used on input line 259.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[11 <./images/tm-eps-converted-to.pdf>]
-
-LaTeX Warning: Text page 12 contains only floats.
-
-[12 <./images/tminfo.png> <./images/tmi1-eps-converted-to.pdf>]
+[11 <./images/tm-eps-converted-to.pdf>] [12 <./images/tminfo.png> <./images/tmi
+1-eps-converted-to.pdf>]
 
 LaTeX Warning: Text page 13 contains only floats.
 
 [13 <./images/tmi1info.png> <./images/tmi2-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <images/at.eps>
-(epstopdf)                    date: 2017-07-05 21:46:35
-(epstopdf)                    size: 25321 bytes
+(epstopdf)                    date: 2017-07-06 17:19:45
+(epstopdf)                    size: 25140 bytes
 (epstopdf)             Output file: <images/at-eps-converted-to.pdf>
-(epstopdf)                    date: 2017-07-05 21:47:43
-(epstopdf)                    size: 7945 bytes
+(epstopdf)                    date: 2017-07-06 17:22:36
+(epstopdf)                    size: 7949 bytes
 (epstopdf)             Command: <repstopdf --outfile=images/at-eps-converted-to
 .pdf images/at.eps>
-(epstopdf)             \includegraphics on input line 282.
+(epstopdf)             \includegraphics on input line 281.
 Package epstopdf Info: Output file is already uptodate.
 
-<images/at-eps-converted-to.pdf, id=117, 429.605pt x 339.2675pt>
+<images/at-eps-converted-to.pdf, id=117, 421.575pt x 316.18124pt>
 File: images/at-eps-converted-to.pdf Graphic file (type pdf)
 
 <use images/at-eps-converted-to.pdf>
-Package pdftex.def Info: images/at-eps-converted-to.pdf used on input line 282.
+Package pdftex.def Info: images/at-eps-converted-to.pdf used on input line 281.
 
-(pdftex.def)             Requested size: 198.15822pt x 156.49014pt.
+(pdftex.def)             Requested size: 265.56148pt x 199.16928pt.
 
 <images/atinfo.png, id=118, 296.10625pt x 177.66376pt>
 File: images/atinfo.png Graphic file (type png)
@@ -887,59 +878,76 @@ File: images/atinfo.png Graphic file (type png)
 Package pdftex.def Info: images/atinfo.png used on input line 287.
 (pdftex.def)             Requested size: 237.11122pt x 142.26378pt.
 
+[14 <./images/tmi2info.png> <./images/at-eps-converted-to.pdf>] [15 <./images/a
+tinfo.png>]
+Package epstopdf Info: Source file: <images/va.eps>
+(epstopdf)                    date: 2017-07-06 17:19:03
+(epstopdf)                    size: 24703 bytes
+(epstopdf)             Output file: <images/va-eps-converted-to.pdf>
+(epstopdf)                    date: 2017-07-06 17:22:37
+(epstopdf)                    size: 7607 bytes
+(epstopdf)             Command: <repstopdf --outfile=images/va-eps-converted-to
+.pdf images/va.eps>
+(epstopdf)             \includegraphics on input line 340.
+Package epstopdf Info: Output file is already uptodate.
+ <images/va-eps-converted-to.pdf, id=130, 429.605pt x 339.2675pt>
+File: images/va-eps-converted-to.pdf Graphic file (type pdf)
 
-LaTeX Warning: `h' float specifier changed to `ht'.
+<use images/va-eps-converted-to.pdf>
+Package pdftex.def Info: images/va-eps-converted-to.pdf used on input line 340.
 
-) (./sections/uncertainty.tex [14 <./images/tmi2info.png> <./images/at-eps-conv
-erted-to.pdf>]
+(pdftex.def)             Requested size: 216.17201pt x 170.71652pt.
+
+<images/vainfo.png, id=131, 295.1025pt x 178.6675pt>
+File: images/vainfo.png Graphic file (type png)
+ <use images/vainfo.png>
+Package pdftex.def Info: images/vainfo.png used on input line 345.
+(pdftex.def)             Requested size: 234.9881pt x 142.26378pt.
+)
+(./sections/uncertainty.tex [16 <./images/va-eps-converted-to.pdf> <./images/va
+info.png>]
 Overfull \hbox (12.56207pt too wide) in paragraph at lines 31--31
 [] 
  []
 
-[15 <./images/atinfo.png>] [16]
-Underfull \hbox (badness 10000) in paragraph at lines 123--124
+[17] [18]
+Underfull \hbox (badness 10000) in paragraph at lines 124--125
 
  []
 
-[17]
-Overfull \hbox (1.61905pt too wide) in paragraph at lines 159--159
+[19] [20]
+Overfull \hbox (1.61905pt too wide) in paragraph at lines 198--198
 [] 
  []
 
-) [18] (./lab3.aux)
-
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
- ) 
+[21] [22] [23] [24]) [25] (./lab3.aux) ) 
 Here is how much of TeX's memory you used:
- 12115 strings out of 494953
- 249845 string characters out of 6180977
- 268387 words of memory out of 5000000
- 15284 multiletter control sequences out of 15000+600000
+ 12134 strings out of 494953
+ 250148 string characters out of 6180977
+ 268486 words of memory out of 5000000
+ 15301 multiletter control sequences out of 15000+600000
  15980 words of font info for 59 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  38i,20n,42p,10375b,542s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></us
-r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/sha
-re/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/tex
-live/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/t
-exmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-d
-ist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fon
-ts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type
-1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/publi
-c/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfo
-nts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/c
-mr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pf
-b></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr
-/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/
-texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on lab3.pdf (19 pages, 460379 bytes).
+</usr/share/texlive/texmf-dist/fonts/ty
+pe1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
+blic/amsfonts/cm/cmcsc10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
+amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfon
+ts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/
+cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.
+pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></u
+sr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/shar
+e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texli
+ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf
+-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fo
+nts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/ty
+pe1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/pub
+lic/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ams
+fonts/cm/cmti12.pfb>
+Output written on lab3.pdf (26 pages, 490444 bytes).
 PDF statistics:
- 190 PDF objects out of 1000 (max. 8388607)
- 123 compressed objects within 2 object streams
+ 219 PDF objects out of 1000 (max. 8388607)
+ 142 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 96 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 106 words of extra memory for PDF output out of 10000 (max. 10000000)
 
