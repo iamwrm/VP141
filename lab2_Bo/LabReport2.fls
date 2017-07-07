@@ -1,9 +1,9 @@
-PWD /home/qifubo/VP141/VP141/lab2_Bo
+PWD /home/a727749815/VP141/VP141/lab2_Bo
 INPUT /etc/texmf/web2c/texmf.cnf
 INPUT /usr/share/texmf/web2c/texmf.cnf
 INPUT /usr/share/texlive/texmf-dist/web2c/texmf.cnf
 INPUT /var/lib/texmf/web2c/pdftex/pdflatex.fmt
-INPUT /home/qifubo/VP141/VP141/lab2_Bo/LabReport2.tex
+INPUT /home/a727749815/VP141/VP141/lab2_Bo/LabReport2.tex
 OUTPUT LabReport2.log
 INPUT /usr/share/texlive/texmf-dist/tex/latex/base/article.cls
 INPUT /usr/share/texlive/texmf-dist/tex/latex/base/article.cls
@@ -33,10 +33,10 @@ INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/latexconfig/graphics.cfg
-INPUT /usr/share/texlive/texmf-dist/tex/latex/latexconfig/graphics.cfg
-INPUT /usr/share/texlive/texmf-dist/tex/latex/pdftex-def/pdftex.def
-INPUT /usr/share/texlive/texmf-dist/tex/latex/pdftex-def/pdftex.def
+INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def
+INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def
 INPUT /usr/share/texlive/texmf-dist/tex/generic/oberdiek/infwarerr.sty
 INPUT /usr/share/texlive/texmf-dist/tex/generic/oberdiek/infwarerr.sty
 INPUT /usr/share/texlive/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
@@ -76,8 +76,8 @@ INPUT /usr/share/texlive/texmf-dist/tex/latex/beamer/translator/translator-langu
 INPUT LabReport2.aux
 INPUT LabReport2.aux
 OUTPUT LabReport2.aux
-INPUT /usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
-INPUT /usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
+INPUT /usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+INPUT /usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 INPUT /usr/share/texlive/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
 INPUT /usr/share/texlive/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
 INPUT /usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifluatex.sty
@@ -144,6 +144,7 @@ INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb
+INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb
