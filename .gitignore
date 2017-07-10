@@ -2,6 +2,7 @@
 *.fdb_latexmk
 *.pdf
 *.out
+part/auto/
 # Added by iamwrm@gmail.com
 
 # Created by https://www.gitignore.io/api/latex
