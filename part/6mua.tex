@@ -1,0 +1,77 @@
+\section{Measurement Uncertainty Analysis}
+
+\subsection{Uncertainty of The Distance Measurement}
+We use formula to calculate type-A uncertainty
+\begin{multline*}
+ u_A = t_{0.95} \sqrt{\frac{1}{3(3-1)} \sum_{k=1}^3{(S_k-\bar{S})^2} } = \\
+4.30 \cdot \sqrt{1/6\cdot ( (147.0-  146.83)^2 +  (147.0-  146.83)^2 + (146.5-
+  146.83)^2 ) } =   0.7 mm
+\end{multline*}
+And type-B uncertainty is $u_B = $ = 1 mm. Thus,
+
+$$   u_s = \sqrt{u_A^2+u_B^2} = \sqrt{0.7^2+1^2} = 1.2 mm  $$
+$$   u_{S,r} = 1.2 / 146.8 = 0.82 \% $$ 
+
+\subsection{Uncertainty of The Time Measurement}
+We use formula to calculate type-A uncertainty
+\begin{equation}
+ u_A = t_{0.95} \sqrt{\frac{1}{6(6-1)} \sum_{k=1}^6{(t_k-\bar{t})^2} } = 1.05
+ \cdot 0.0252 = 0.0492 s
+\end{equation}
+And type-B uncertainty is $u_B = $ = 0.01 s. Thus,
+$$   u_t = \sqrt{u_A^2+u_B^2} = \sqrt{0.0492^2+0.01^2} =  0.0502 s $$
+$$   u_{t,r} = 0.050 / 6.8517= 0.73 \% $$ 
+
+
+\subsection{Uncertainty of The Ball Diameter}
+We use formula to calculate type-A uncertainty
+\begin{equation}
+  u_A = t_{0.95} \sqrt{\frac{1}{10(10-1)} \sum_{k=1}^{10}{(d_k-\bar{d})^2} }
+ = 0.715  \cdot   0.0197 = 0.0141 s
+\end{equation}
+And type-B uncertainty is $u_B = $ = 0.005 mm. Thus,
+$$   u_d = \sqrt{u_A^2+u_B^2} = \sqrt{0.0141^2+0.005^2} = 0.0150 mm $$
+$$   u_{d,r} = 0.0150 / 1.977 =  0.76 \% $$ 
+
+\subsection{Uncertainty of The Inner Diameter of The Flask}
+We use formula to calculate type-A uncertainty
+\begin{equation}
+  u_A = t_{0.95} \sqrt{\frac{1}{6(6-1)} \sum_{k=1}^{6}{(D_k-\bar{D})^2} }
+ = 1.05  \cdot 0.0523 =  0.0549 mm 
+\end{equation}
+And type-B uncertainty is $u_B = $ = 0.02 mm. Thus,
+$$   u_D = \sqrt{u_A^2+u_B^2} = \sqrt{0.0549^2+0.02^2} = 0.0584 mm $$
+$$   u_{D,r} = 0.0584 /  61.3533 =  0.095 \% $$ 
+
+\subsection{Uncertainty of The Mass of The Ball}
+We have $u_m $ for 40 balls, thus
+$$   u_{m_0} = u_m /40 = 0.0001 / 40 / 1000 = 2.5 \cdot 10^{-8} kg  $$
+
+\subsection{Uncertainty of The Density of One Ball}
+From
+$$   \rho_2 = \frac{6m_0}{ \pi d^3 } $$
+Then we can find that
+$$ u_{\rho_2} = \sqrt{(\frac{\partial \rho_2}{\partial m_0})^2(u_{m_0})^2 +
+  (\frac{\partial \rho_2}{\partial d})^2(u_d)^2 
+} = 96.70  $$ 
+$$   u_{\rho_2,r} = u_{\rho_2 } / \rho_2  =  96.70 / 8.385 \cdot 10^3 =   1.14 \% $$ 
+The code is included as matlab/cal1.m 
+
+
+\subsection{Uncertainty of The Viscosity Coefficient}
+
+
+$$ \mu = \frac{2}{9} g R^2 \frac{( \rho_2 - \rho_1 ) t  }{s} (1 + 2.4
+\frac{R}{R_c})  $$
+
+Thus,
+$$ u_{\mu} = \sqrt{(\frac{\partial \mu}{\partial d})^2(u_d)^2
+  + (\frac{\partial \mu}{\partial s})^2(u_s)^2
+  + (\frac{\partial \mu}{\partial t})^2(u_t)^2
+  + (\frac{\partial \mu}{\partial \rho_1})^2(u_{\rho_1})^2
+  + (\frac{\partial \mu}{\partial D})^2(u_D)^2 }  $$ 
+$$ u_{\mu}  =  1.4264 \cdot 10^{-2}   $$
+$$ u_{\mu,r} =\frac{u_\mu}{\mu}=  1.42 \cdot 10^{-2}  / 0.7307 =   1.94 \% $$
+
+The code is included as matlab/cal2.m 
+
