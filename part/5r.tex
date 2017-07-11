@@ -1,18 +1,43 @@
 \section{Result}
 
-\subsection{Devices Precision}
-The precisions of the devices are shown in Table \ref{pre}.
+\subsection{Measurements for spring constant}
+
+First we get the raw length measurement data \ref{s1}
 \begin{table}[H]
 \centering
-\begin{tabular}{|l|p{2cm}|p{1cm}|}
+\begin{tabular}{|p{0.7cm}|p{3cm}||p{0.7cm}|p{3cm}||p{0.7cm}|p{3cm}|}
 \hline
-Devices & Precision & Unit \\ \hline
-Jolly balance & 0.01 & [cm] \\ \hline
-Ruler & 0.1 & [cm] \\ \hline
-Timer for periods & 0.1 & [ms] \\ \hline
-Timer for maximum speed & 0.01 & [ms] \\ \hline
-Calliper & 0.02 & [mm] \\ \hline
-Electronic scale & 0.01 & [g] \\ \hline
+\multicolumn{2}{|c|}{spring 1 [cm] $\pm$ 0.01 [cm]} &
+\multicolumn{2}{|c|}{spring 2 [cm] $\pm$ 0.01 [cm]} &
+\multicolumn{2}{|c|}{spring 3 [cm] $\pm$ 0.01 [cm]} \\ \hline
+$L_0$ & 0.00  & $L_0$ & 0.00  & $L_0$ & 20.00 \\ \hline
+$L_1$ & 2.00  & $L_1$ & 2.01  & $L_1$ & 23.96 \\ \hline
+$L_2$ & 3.96  & $L_2$ & 4.00  & $L_2$ & 27.94 \\ \hline
+$L_3$ & 5.96  & $L_3$ & 6.03  & $L_3$ & 31.90 \\ \hline
+$L_4$ & 8.02  & $L_4$ & 8.06  & $L_4$ & 36.40 \\ \hline
+$L_5$ & 10.04 & $L_5$ & 10.08 & $L_5$ & 39.94 \\ \hline
+$L_6$ & 12.02 & $L_6$ & 12.10 & $L_6$ & 44.02 \\ \hline
 \end{tabular}
-\caption{Devices precision}\label{pre}
+\caption{Spring constant measurement data}
+\label{s1}
+\end{table}
+
+Then we can calculate the change amount of the spring length by $\Delta L_i=L_i-L_0$ and get \ref{s2}
+
+\begin{table}[H]
+\centering
+\begin{tabular}{|p{0.7cm}|p{3cm}|p{0.7cm}|p{3cm}|p{0.7cm}|p{3cm}|}
+\hline
+\multicolumn{2}{|c|}{spring 1 [cm] $\pm$ 0.01 [cm]} &
+\multicolumn{2}{|c|}{spring 2 [cm] $\pm$ 0.01 [cm]} &
+\multicolumn{2}{|c|}{spring 3 [cm] $\pm$ 0.01 [cm]} \\ \hline
+$\Delta L_1$ & 2.00  & $\Delta L_1$ & 2.01  & $\Delta L_1$ & 3.96  \\ \hline
+$\Delta L_2$ & 3.96  & $\Delta L_2$ & 4.00  & $\Delta L_2$ & 7.94  \\ \hline
+$\Delta L_3$ & 5.96  & $\Delta L_3$ & 6.03  & $\Delta L_3$ & 11.90 \\ \hline
+$\Delta L_4$ & 8.02  & $\Delta L_4$ & 8.06  & $\Delta L_4$ & 16.40 \\ \hline
+$\Delta L_5$ & 10.04 & $\Delta L_5$ & 10.08 & $\Delta L_5$ & 19.94 \\ \hline
+$\Delta L_6$ & 12.02 & $\Delta L_6$ & 12.10 & $\Delta L_6$ & 24.02 \\ \hline
+\end{tabular}
+\caption{Calculated Spring constant measurement data}
+\label{s2}
 \end{table}
