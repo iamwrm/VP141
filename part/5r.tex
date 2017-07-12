@@ -111,7 +111,7 @@ Then we use MATLAB fit tools to find $k_1$
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=15cm]{matlab/fitfig/k1}
+	\includegraphics[width=13cm]{matlab/fitfig/k1}
 	\caption{Fit curve of spring 1}
 \end{figure}
 
@@ -153,7 +153,7 @@ Then we use MATLAB fit tools to find $k_2$
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=15cm]{matlab/fitfig/k2}
+	\includegraphics[width=13cm]{matlab/fitfig/k2}
 	\caption{Fit curve of spring 2}
 \end{figure}
 
@@ -194,7 +194,7 @@ Then we use MATLAB fit tools to find $k_3$ , in other words, the $k$ of the seri
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=15cm]{matlab/fitfig/k3}
+	\includegraphics[width=13cm]{matlab/fitfig/k3}
 	\caption{Fit curve of spring serial}
 \end{figure}
 
@@ -306,7 +306,7 @@ Then we use MATLAB fit tools to find $slope_{h}$
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=15cm]{matlab/fitfig/m1}
+	\includegraphics[width=13cm]{matlab/fitfig/m1}
 	\caption{Fit curve of $T^2$ vs. $M$ for horizontal situation}
 \end{figure}
 
@@ -344,7 +344,7 @@ Then we use MATLAB fit tools to find $slope_{i1}$, the slope for incline 1.
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=15cm]{matlab/fitfig/m2}
+	\includegraphics[width=13cm]{matlab/fitfig/m2}
 	\caption{Fit curve of $T^2$ vs. $M$ for incline 1 situation}
 \end{figure}
 
@@ -382,7 +382,7 @@ Then we use MATLAB fit tools to find $slope_{i2}$, the slope for incline 2.
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=15cm]{matlab/fitfig/m3}
+	\includegraphics[width=13cm]{matlab/fitfig/m3}
 	\caption{Fit curve of $T^2$ vs. $M$ for incline 2 situation}
 \end{figure}
 
@@ -397,6 +397,67 @@ Goodness of fit:
   Adjusted R-square: 0.9996 \\
   RMSE: 0.001578 \\
 \end{quote}
+
+
+\subsection{Relation between period $T$ and amplitude $A$}
+
+We get the following raw data from the experiment.
+\begin{table}[H]
+	\centering
+	\begin{tabular}{|c|c|c|}
+	\hline
+	\multicolumn{2}{|c|}{ $A$ [cm] $\pm$ 0.1 [cm]} & ten periods [ms] $\pm$ 0.1 [ms] \\ \hline
+	1 &  5.0 & 12566.3 \\ \hline
+	2 & 10.0 & 12565.2 \\ \hline
+	3 & 15.0 & 12560.9 \\ \hline
+	4 & 20.0 & 12562.6 \\ \hline
+	5 & 25.0 & 12562.8 \\ \hline
+	6 & 30.0 & 12563.7 \\ \hline
+	\end{tabular}
+	\caption{ten periods $T$ vs. $A$}
+	\label{TvsAraw}
+\end{table}
+
+Then we can drive it into $T$ vs. $A$
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{|c|c|c|}
+	\hline
+	\multicolumn{2}{|c|}{ $A$ [m] $\pm$ 0.001 [m]} & $T$ [s] $\pm$ 0.00001 [s] \\ \hline
+	1 & 0.050 & 1.25663 \\ \hline
+	2 & 0.100 & 1.25652 \\ \hline
+	3 & 0.150 & 1.25609 \\ \hline
+	4 & 0.200 & 1.25626 \\ \hline
+	5 & 0.250 & 1.25628 \\ \hline
+	6 & 0.300 & 1.25637 \\ \hline
+	\end{tabular}
+	\caption{$T$ vs. $A$}
+	\label{TvsA}
+\end{table}
+
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=13cm]{matlab/fitfig/a1}
+	\caption{Fit curve of $T$ vs. $A$}
+\end{figure}
+
+$$ k =  -0.001057 \pm 0.0025  [s/m] $$
+$$ u_{k,r} = 236.52 \% $$
+
+Goodness of fit:
+\begin{quote}
+	\centering
+ SSE: 1.39e-07 \\ 
+ R-square: 0.2602 \\ 
+ Adjusted R-square: 0.07529 \\ 
+ RMSE: 0.0001864 \\ 
+\end{quote}
+
+Although the relative uncertainty is quite large, it's because the $k$ is too small.
+Thus, we can say that $T$ is not relative to $A$
+
 
 
 
