@@ -204,10 +204,10 @@ $$ u_{k_3,r} = 3.26 \% $$
 Goodness of fit:
 \begin{quote}
 	\centering
-	SSE: 2.144e-05
-	R-square: 0.9994
-	Adjusted R-square: 0.9993
-	RMSE: 0.002315 
+	SSE: 2.144e-05 \\
+	R-square: 0.9994 \\
+	Adjusted R-square: 0.9993 \\
+	RMSE: 0.002315  \\
 \end{quote}
 
 % NOTE: k cal
@@ -302,7 +302,27 @@ Thus, for horizontal situation, we can get the following table.
 	\label{T2vsM_0}
 \end{table}
 
-Thus, for incline 1 situation, we can get the following table.
+Then we use MATLAB fit tools to find $slope_{h}$
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=15cm]{matlab/fitfig/m1}
+	\caption{Fit curve of $T^2$ vs. $M$ for horizontal situation}
+\end{figure}
+
+$$slope_{h} = 8.3233 \pm 0.2235 [s^2/kg] $$
+$$ u_{slope_{h},r} = 2.69 \% $$
+
+Goodness of fit:
+\begin{quote}
+	\centering
+  SSE: 1.042e-05 \\ 
+  R-square: 0.9996 \\ 
+  Adjusted R-square: 0.9995 \\ 
+  RMSE: 0.001614 \\
+\end{quote}
+
+For incline 1 situation, we can get the following table.
 
 \begin{table}[H]
 	\centering
@@ -320,7 +340,27 @@ Thus, for incline 1 situation, we can get the following table.
 	\label{T2vsM_1}
 \end{table}
 
-Thus, for incline 2 situation, we can get the following table.
+Then we use MATLAB fit tools to find $slope_{i1}$, the slope for incline 1.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=15cm]{matlab/fitfig/m2}
+	\caption{Fit curve of $T^2$ vs. $M$ for incline 1 situation}
+\end{figure}
+
+$$slope_{i1} = 8.4380 \pm 0.0500 [s^2/kg] $$
+$$ u_{slope_{i1},r} = 0.59 \% $$
+
+Goodness of fit:
+\begin{quote}
+	\centering
+  SSE: 5.119e-07 \\ 
+  R-square: 1 \\ 
+  Adjusted R-square: 1 \\ 
+  RMSE: 0.0003577 \\ 
+\end{quote}
+
+For incline 2 situation, we can get the following table.
 
 \begin{table}[H]
 	\centering
@@ -338,6 +378,25 @@ Thus, for incline 2 situation, we can get the following table.
 	\label{T2vsM_2}
 \end{table}
 
+Then we use MATLAB fit tools to find $slope_{i2}$, the slope for incline 2.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=15cm]{matlab/fitfig/m3}
+	\caption{Fit curve of $T^2$ vs. $M$ for incline 2 situation}
+\end{figure}
+
+$$slope_{i2} = 8.3467 \pm 0.2185 [s^2/kg] $$
+$$ u_{slope_{i2},r} = 2.62 \% $$
+
+Goodness of fit:
+\begin{quote}
+	\centering
+  SSE: 9.958e-06 \\
+  R-square: 0.9996 \\
+  Adjusted R-square: 0.9996 \\
+  RMSE: 0.001578 \\
+\end{quote}
 
 
 

@@ -26,9 +26,9 @@ ts= [t1,t2,t3];
 
 %%%
 
-[gof1,k1] = f1(t1,Mi_inkg,1);
-[gof2,k2] = f1(t2,Mi_inkg,2);
-[gof3,k3] = f1(t3,Mi_inkg,3);
+[gof1,k1] = f2(t1,Mi_inkg);
+[gof2,k2] = f2(t2,Mi_inkg);
+[gof3,k3] = f2(t3,Mi_inkg);
 [k1;k2;k3]	
 
 
