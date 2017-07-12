@@ -87,6 +87,7 @@ the weights of each weight object from its mass, as shown in Table
 
 
 % =====================================
+% NOTE: Spring 1
 For Spring 1, we can have its length change data versus the force affected on it
 data.  
 
@@ -114,21 +115,21 @@ Then we use MATLAB fit tools to find $k_1$
 \caption{Fit curve of spring 1}
 \end{figure}
 
-$$k_1 = 2.3311 \pm 0.0013 [N/m] $$
-$$ u_{k_1,r} = 0.055 \% $$
+$$ k_1 = 2.3311 \pm 0.013 [N/m] $$
+$$ u_{k_1,r} = 0.55 \% $$
 
-Fit information: 
+Goodness of fit:
 \begin{quote}
-\centering
-sse: 6.5410e-07 \\
-rsquare: 1.0000 \\
-dfe: 4 \\
-adjrsquare: 1.0000 \\
-rmse: 4.0438e-04 \\
+	\centering
+	SSE: 6.091e-07\\
+	R-square: 1\\
+	Adjusted R-square: 1 \\
+	RMSE: 0.0003902 \\
 \end{quote}
 
 
 % =====================================
+% NOTE: Spring 2
 For Spring 2, we can have its length change data versus the force affected on it
 data.  
 
@@ -148,7 +149,28 @@ $\Delta L_6$ & 12.10 &  0.2792  \\ \hline
 \label{s2df}
 \end{table}
 
+Then we use MATLAB fit tools to find $k_2$
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=15cm]{matlab/fitfig/k2}
+\caption{Fit curve of spring 2}
+\end{figure}
+
+$$k_2 =  2.3206 \pm 0.0105 [N/m] $$
+$$ u_{k_2,r} = 0.45 \% $$
+
+Goodness of fit:
+\begin{quote}
+	\centering
+	SSE: 4.305e-07 \\
+	R-square: 1 \\
+	Adjusted R-square: 1 \\
+ 	RMSE: 0.0003281 \\
+\end{quote}
+
 % =====================================
+% NOTE: Spring serial
 For serial, we can have its length change data versus the force affected on it
 data.  
 
@@ -167,3 +189,23 @@ $\Delta L_6$ & 24.02 &  0.2792  \\ \hline
 \caption{$\Delta L$  vs. Force for serial}
 \label{ssdf}
 \end{table}
+
+Then we use MATLAB fit tools to find $k_3$ , in other words, the $k$ of the serial string.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=15cm]{matlab/fitfig/k3}
+\caption{Fit curve of spring serial}
+\end{figure}
+
+$$k_3 = 1.165 \pm 0.0380 [N/m] $$
+$$ u_{k_3,r} = 3.26 \% $$
+
+Goodness of fit:
+\begin{quote}
+\centering
+	SSE: 2.144e-05
+	R-square: 0.9994
+	Adjusted R-square: 0.9993
+	RMSE: 0.002315 
+\end{quote}
