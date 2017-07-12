@@ -1,4 +1,8 @@
 function [ xxx, kkk  ] = f1( force,spring1,kx )
+
+% For result
+%	       |----- Measurements for spring constant  
+
 [xData, yData] = prepareCurveData( spring1, force );
 [fitresult, gof] = fit( xData, yData, fittype( 'poly1' ));
 k1=fitresult.p1;
