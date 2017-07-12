@@ -219,7 +219,11 @@ Compared with $k_3 = 1.1649$  from the experiment,
 $$ u_{k_{3,theory},k_3} = \frac{1.1649 - 1.1629}{1.1629} \cdot 100 \%  = 0.17 \% $$ 
 The theory data is close to the experiment data
 
-\subsection{Measurement for Mass}
+\subsection{Relation between the period $T$ and the mass $M$}
+
+In this part, we investigate in finding the relation between the period $T$ and 
+the mass $M$.
+First, we need to collect the mass data needed later for the fit. Shown in Table \ref{dataMass}.
 
 \begin{table}[H]
 	\centering
@@ -231,9 +235,32 @@ The theory data is close to the experiment data
 	spring 1 			$m_{spr1}$ & 188.16 \\ \hline
 	spring 2 			$m_{spr2}$ & 188.16 \\ \hline \hline
 	\multicolumn{2}{|c|}{Mass of the object [g] $\pm$ 0.015 [g]} \\ \hline 
-	equivalent mass		$M_{0} = m_{I-obj} + \frac{1}{3} m_{spr1} + \frac{1}{3} m_{spr2} $ & 184.13 \\ \hline
-	equivalent mass		$M_{1} = m_{U-obj} + \frac{1}{3} m_{spr1} + \frac{1}{3} m_{spr2} $ & 195.42 \\ \hline
+	equivalent mass		$M_{0,I} = m_{I-obj} + \frac{1}{3} m_{spr1} + \frac{1}{3} m_{spr2} $ & 184.13 \\ \hline 
+	equivalent mass		$M_{0,U} = m_{U-obj} + \frac{1}{3} m_{spr1} + \frac{1}{3} m_{spr2} $ & 195.42 \\ \hline 
 	\end{tabular}
 	\caption{Mass measurement data}
-	\label{measurementOfMass}
+	\label{dataMass}
 \end{table}
+
+
+The the period $T$ measured in different situations are shown in Table \ref{dataTime}.
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{|c|c|c|c|c|c|}
+	\hline
+	\multicolumn{6}{|c|}{10 periods [ms] $\pm$ 0.1 [ms]} \\ \hline
+    \multicolumn{2}{|c|}{horizontal}  &
+     \multicolumn{2}{|c|}{incline 1}  &
+     \multicolumn{2}{|c|}{incline 2}  \\ \hline
+	$m_1$ & 12560.4 & $m_1$ & 12557.8 & $m_1$ & 12560.9 \\ \hline
+	$m_2$ & 12718.2 & $m_2$ & 12711.1 & $m_2$ & 12722.0 \\ \hline
+	$m_3$ & 12878.4 & $m_3$ & 12872.2 & $m_3$ & 12885.9 \\ \hline
+	$m_4$ & 13021.2 & $m_4$ & 13030.3 & $m_4$ & 13034.7 \\ \hline
+	$m_5$ & 13189.2 & $m_5$ & 13186.0 & $m_5$ & 13179.2 \\ \hline
+	$m_6$ & 13326.5 & $m_6$ & 13333.3 & $m_6$ & 13336.9 \\ \hline
+	\end{tabular}
+	\caption{Period $T$ measurement data}
+	\label{dataTime}
+\end{table}
+
