@@ -49,26 +49,26 @@ u_{slope} & = \sqrt{
 	+(\frac{\partial slope}{\partial slope_{inc1}})^2\cdot(u_{sloinc1})^2
 	+(\frac{\partial slope}{\partial slope_{inc2}})^2\cdot(u_{slope_{inc2}})^2} \\
 & = \sqrt{
-	(\frac{1}{3})^2\cdot(0.05)^2
-	+(\frac{1}{3})^2\cdot(0.14)^2
-	+(\frac{1}{3})^2\cdot(0.17)^2} = 0.08s^2/kg\\
-u_{r,slope} & = \frac{u_{slope}}{\overline{slope}}\times100\%
-              =\frac{0.08}{8.74}\times100\%=0.9\%.
+	(\frac{1}{3})^2 \cdot (0.22)^2
+	+(\frac{1}{3})^2 \cdot (0.05)^2
+	+(\frac{1}{3})^2 \cdot (0.22)^2} = 0.18s^2/kg\\
 \end{split}
 \]
 
-Hence, $slope_e=\overline{slope}=8.74\pm 0.08s^/kg, \quad u_{r,slope}=0.9\%$. 
-Compared with the ``theoretical'' value of $slope_t=8.82s^2/kg$,
-we calculate deviation $\Delta slope$ and relative deviation $\Delta_r slope$
+$$ u_{r,slope} = \frac{u_{slope}}{\bar{slope}} \times 100 \%
+               =\frac{0.18}{8.37} \times 100 \% = 2.15\% $$
 
- $$   \Delta slope=8.74-8.82=-0.08s^2/kg        $$
- $$   \Delta_r slope=\frac{8.74-8.82}{8.82}\times 100\%=-0.9\%     $$
+Comparing the calculated data with the experiment data,
+$$   \Delta slope = 8.37 - 8.45 = -0.08 s^2/kg        				   $$
+$$   \Delta_r slope = \frac{ 8.37 - 8.45}{8.45} \times 100\% = 0.95 \%  $$
 
-The theoretical value is just on the boundary of uncertainty interval. It shows that our experimental values are relatively reliable.
+For the deviation between theory calculation is not very large, it indicates that the experiment is quite success.
 
-\subsection{Uncertainty in the $v_{max}^2\ vs.\ A^2$ relation}
+%NOTE: finish here
 
-\subsubsection{Uncertainty of $\Delta x$}
+\subsection{Uncertainty in the $v_{\max}^2\ vs.\ A^2$ relation}
+
+For analyzing the uncertainty of $\Delta x$,
 First, we need to determine the uncertainty of $x_{in}$ and $x_{out}$. The uncertainty of type-B of a calliper is $\Delta_{x,B}=\Delta{dev}=0.02\times10^m$. The distance is found by the average value of 3 measurements. To estimate  type-A uncertainty, the standard deviation of the average value is 
 
 $$   s_{\overline{x_{in}}}=\sqrt{\frac{1}{n(n-1)}\sum_{i=1}^n(x_{in,i}-\overline{x_{in}})^2} $$
@@ -108,8 +108,8 @@ Then we can calculate the propagated uncertainty of $\Delta x$
 \end{split}
 \]
 
-\subsubsection{Uncertainty of the maximum speed $v_{max}$}
-Then we can calculate the propagated uncertainty of $v_{max}=\Delta x/\Delta t$. The partial derivatives are
+For the Uncertainty of the maximum speed $v_{\max}$
+Then we can calculate the propagated uncertainty of $v_{\max}=\Delta x/\Delta t$. The partial derivatives are
 \[
 \begin{split}
     \frac{\partial v_{\max}}{\partial \Delta x}&=\frac{1}{\Delta t}.\\[0.5cm]
@@ -119,7 +119,7 @@ Then we can calculate the propagated uncertainty of $v_{max}=\Delta x/\Delta t$.
 
 \[
 \begin{split}
-    u_{v_{max}}&=\sqrt{(\frac{\partial v_{max}}{\partial \Delta x})^2(u_{\Delta x})^2+(\frac{\partial v_{max}}{\partial \Delta t})^2(u_{\Delta t})^2}     \\
+    u_{v_{\max}}&=\sqrt{(\frac{\partial v_{\max}}{\partial \Delta x})^2(u_{\Delta x})^2+(\frac{\partial v_{\max}}{\partial \Delta t})^2(u_{\Delta t})^2}     \\
     &=\sqrt{(\frac{1}{\Delta t})^2(u_{\Delta x})^2+(-\frac{\Delta x}{(\Delta t)^2})^2(u_{\Delta t})^2}
 \end{split}
 \]
