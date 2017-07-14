@@ -69,24 +69,24 @@ For the deviation between theory calculation is not very large, it indicates tha
 \subsection{Uncertainty in the $v_{\max}^2\ vs.\ A^2$ relation}
 
 For analyzing the uncertainty of $\Delta x$,
-First, we need to determine the uncertainty of $x_{in}$ and $x_{out}$. The uncertainty of type-B of a calliper is $\Delta_{x,B}=\Delta{dev}=0.02\times10^m$. The distance is found by the average value of 3 measurements. To estimate  type-A uncertainty, the standard deviation of the average value is 
+First, investigate the uncertainty of $x_{in}$ and $x_{out}$. 
+The uncertainty of type-B of a calliper is 
 
-$$   s_{\overline{x_{in}}}=\sqrt{\frac{1}{n(n-1)}\sum_{i=1}^n(x_{in,i}-\overline{x_{in}})^2} $$
+$$\Delta_{x,B} = \Delta{dev} = 0.02 \times 10^m   $$ 
 
-Using the data from Table \ref{x} we find that $s_{\overline{x_{in}}}\approx 0.0176\times10^{-3}m$. Considering $t_{0.95}=4.30$ for $n=3$, the typuncertainty is estimated as $\Delta_{x_{in},A}=4.30\times0.0176\times10^{-3}m\approx 0.0757\times10^{-3}m$.\\
-Hence the combined uncertainty is
+Take the mean value of the three time measurements of the distance.
+To determine type-A uncertainty, the standard deviation of the average value is 
 
-$$  u_{x_{in}}=\sqrt{\Delta_{x_{in},A}^2+\Delta_{x_{in},B}^2}=\sqrt{(0.02\times10^{-3})^2+(0.0757\times10^{-3})^2}\approx 0.08\times10^{-3}m$$
+$$   s_{\overline{x_{in}}} = \sqrt{\frac{1}{n(n-1)}\sum_{i=1}^n(x_{in,i}-\overline{x_{in}})^2} $$
+$$   s_{\overline{x_{in}}} = 5.3 \times 10^{-3} m 		$$
 
- and the corresponding relative uncertainty is 
-
+$$  u_{x_{in}}=\sqrt{\Delta_{x_{in},A}^2+\Delta_{x_{in},B}^2}
+     = \sqrt{(0.02 \times 10^{-3} )^2
+	 +(5.3 \times 10^{-3})^2} 
+	 = 5.3 \times 10^{-3} m $$
 $$  u_{r,x_{in}}=\frac{u_{x_{in}}}{\overline{x_{in}}}\times 100\%=1.8\%$$
 
-The experimentally found $x_{in}$ is 
-
-$$    x_{in}=(4.49\pm 0.08) \times10^{-3}m,\quad u_{r,x_{in}}=1.8\%$$
-
-Similarly, we know about $x_{out}$ that
+Similarly, we can calculate $x_{out}$ that
 \[
 \begin{split}
     &\Delta_{x_{out},A}=t_{0.95}\cdot s_{\overline{x_{out}}}=0.0287\times10^{-3}m\\
@@ -96,30 +96,34 @@ Similarly, we know about $x_{out}$ that
     &x_{out}=(15.41\pm 0.03) \times10^{-3}m,\quad u_{r,x_{out}}=0.2\%.
 \end{split}
 \]
+
 Then we can calculate the propagated uncertainty of $\Delta x$
+
+$$\frac{\partial\Delta x}{\partial x_{in}}=\frac{\partial\Delta x}{\partial x_{out}}=\frac{1}{2}  $$
+
 \[
 \begin{split}
-    \frac{\partial\Delta x}{\partial x_{in}}&=\frac{\partial\Delta x}{\partial x_{out}}=\frac{1}{2},\\
-    u_{\Delta x}&=\sqrt{(\frac{\partial\Delta x}{\partial x_{in}})^2(u_{x_{in}})^2+(\frac{\partial\Delta x}{\partial x_{out}})^2(u_{x_{out}})^2}\\ 
-    &=\sqrt{(\frac{1}{2})^2(0.00008)^2+(\frac{!}{2})^2(0.00003)^2}\\
+    u_{\Delta x}&=\sqrt{(\frac{\partial\Delta x}{\partial x_{in}})^2(u_{x_{in}})^2
+	+(\frac{\partial\Delta x}{\partial x_{out}})^2(u_{x_{out}})^2}\\ 
     &=0.04\times10^{-3}m,\\
-    u_{r,\Delta x}&=\frac{u_{\Delta x}}{\Delta x}\times100\%=0.4\%\\[0.4cm]
-    \Delta x&=(9.95\pm0.04)\times10^{-3}m,\quad u_{r,\Delta x}=0.4\%.
 \end{split}
 \]
+
+$$    u_{r,\Delta x}=\frac{u_{\Delta x}}{\Delta x}\times100\%=0.4\% $$
+$$     \Delta x=(9.95\pm0.04)\times10^{-3}m,\quad u_{r,\Delta x}=0.4\%  $$
 
 For the Uncertainty of the maximum speed $v_{\max}$
 Then we can calculate the propagated uncertainty of $v_{\max}=\Delta x/\Delta t$. The partial derivatives are
 \[
 \begin{split}
     \frac{\partial v_{\max}}{\partial \Delta x}&=\frac{1}{\Delta t}.\\[0.5cm]
-    \frac{\partial v_{\max}}{\partial \Delta t}&=-\frac{\Delta x}{(\Delta t)^2}.    
+    \frac{\partial v_{\max}}{\partial \Delta t}&= - \frac{\Delta x}{(\Delta t)^2}.    
 \end{split}    
 \]
 
 \[
 \begin{split}
     u_{v_{\max}}&=\sqrt{(\frac{\partial v_{\max}}{\partial \Delta x})^2(u_{\Delta x})^2+(\frac{\partial v_{\max}}{\partial \Delta t})^2(u_{\Delta t})^2}     \\
-    &=\sqrt{(\frac{1}{\Delta t})^2(u_{\Delta x})^2+(-\frac{\Delta x}{(\Delta t)^2})^2(u_{\Delta t})^2}
+    &=\sqrt{(\frac{1}{\Delta t})^2(u_{\Delta x})^2+(\frac{\Delta x}{(\Delta t)^2})^2(u_{\Delta t})^2}
 \end{split}
 \]
