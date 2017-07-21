@@ -1,18 +1,21 @@
 \section{Result}
 
+\newcommand{\e}[1]{\times 10^{#1}}
+
 The frequency we read from the signal generator is $f=34498 \pm 1$Hz. The
 temperature is $23 \pm 1 ^\circ C$.
 
 \subsection{Measurements for resonance method}
 
-The measurements are shown in Table \ref{data_res} with the calculation for $L_{10+i}-L_i$.
+The measurements are shown in Table~\ref{data_res} with the calculation for $L_{10+i}-L_i$.
+
 
 \begin{table}[H] \small
     \centering
     \begin{tabular}{|c|c|c|c|c|c|}
     \hline
-        \multicolumn{2}{|c|}{$L_i[\e{-3}m]\pm[0.01\e{-3}m]$} & 
-        \multicolumn{2}{|c|}{$L_i[\e{-3}m]\pm[0.01\e{-3}m]$} &
+        \multicolumn{2}{|c|}{$L_i[\times 10^{-3} m]\pm[0.01\times 10^{-3} m]$} & 
+        \multicolumn{2}{|c|}{$L_i[\times 10^{-3} m]\pm[\times 10^{-3} m]$} &
         \multicolumn{2}{|c|}{$L_{10+i}-L_i[\e{-3}m]$}\\\hline
         1 & 9.90 & 11 & 60.08 & 1 & 50.18 \\\hline
         2 & 14.92 & 12 & 65.08 & 2 & 50.16 \\\hline
@@ -31,13 +34,13 @@ The measurements are shown in Table \ref{data_res} with the calculation for $L_{
 The average value of $\Delta L$ is calculated  based on the results presented in Table \ref{data_res} as
 
 \[
-    \overline{\Delta L}=\frac{1}{10}\sum_{i=1}^{10}\Delta L_i=(50.16\pm 0.05)\e{-3}m,\quad u_{r,\Del}=0.10\%.
+    \overline{\Delta L}=\frac{1}{10}\sum_{i=1}^{10}\Delta L_i=(50.16\pm 0.05)\times 10^{-3} m,\quad u_{r,\Delta}=0.10\%.
 \]
 
 Hence, the wavelength $\lambda$ can be calculated as
 
 \[
-        \lambda=\frac{2\Delta L}{n}=\frac{2\times50.16\e{-3}}{10}=(10.03\pm0.01)\e{-3}m,\quad u_{r,\lambda}=0.10\%.
+        \lambda=\frac{2\Delta L}{n}=\frac{2\times50.16\times 10^{-3} }{10}=(10.03\pm0.01)\times 10^{-3} m,\quad u_{r,\lambda}=0.10\%.
 \]
 
 The speed of sound in air $v$ is
@@ -54,8 +57,8 @@ The measurements are shown in Table \ref{data_pha} with the calculation for $L_{
     \centering
     \begin{tabular}{|c|c|c|c|c|c|}
     \hline
-        \multicolumn{2}{|c|}{$L_i[\e{-3}m]\pm[0.01\e{-3}m]$} & 
-        \multicolumn{2}{|c|}{$L_i[\e{-3}m]\pm[0.01\e{-3}m]$} &
+        \multicolumn{2}{|c|}{$L_i[\times 10^{-3} m]\pm[0.01\times 10^{-3} m]$} & 
+        \multicolumn{2}{|c|}{$L_i[\times 10^{-3} m]\pm[0.01\times 10^{-3} m]$} &
         \multicolumn{2}{|c|}{$L_{6+i}-L_i[\e{-3}m]$}\\\hline
         1 & 54.00 & 7 & 113.41 & 1 & 59.41 \\\hline
         2 & 64.06 & 8 & 122.04 & 2 & 57.98 \\\hline
@@ -70,13 +73,13 @@ The measurements are shown in Table \ref{data_pha} with the calculation for $L_{
 The average value of $\Delta L$ is calculated  based on the results presented in Table \ref{data_res} as
 
 \[
-    \overline{\Delta L}=\frac{1}{6}\sum_{i=1}^{6}\Delta L_i=(59.84\pm 1.7)\e{-3}m,\quad u_{r,\Delta L}=3\%.
+    \overline{\Delta L}=\frac{1}{6}\sum_{i=1}^{6}\Delta L_i=(59.84\pm 1.7)\times 10^{-3} m,\quad u_{r,\Delta L}=3\%.
 \]
 
 Hence, the wavelength $\lambda$ can be calculated as
 
 \[
-    \lambda=\frac{\Delta L}{n}=\frac{\times59.84\e{-3}}{6}=(9.973\pm0.3)\e{-3}m,\quad u_{r,\lambda}=3\%.
+    \lambda=\frac{\Delta L}{n}=\frac{\times59.84\e{-3}}{6}=(9.973\pm0.3)\times 10^{-3} m,\quad u_{r,\lambda}=3\%.
 \]
 
 The speed of sound in air $v$ is
@@ -93,7 +96,7 @@ We obtain the speed of sound in water from Table \ref{data_tim} by linear fittin
     \centering
     \begin{tabular}{|c|c|c|c|c|}
     \hline
-        & $t_i[\e{-6}s]$ & $u_{t_i}[\e{-6}s]$ & $L_i[\e{-3}m]$ & $u_{L_i}[\e{-3}m]$\\\hline
+        & $t_i[\e{-6}s]$ & $u_{t_i}[\times 10^{-6} s]$ & $L_i[\times 10^{-3} m]$ & $u_{L_i}[\times 10^{-3} m]$\\\hline
         1 & 159.6 & 0.2 & 230.00 & 0.01\\\hline
         2 & 154.4 & 0.2 & 220.00 & 0.01\\\hline
         3 & 148.2 & 0.2 & 210.00 & 0.01\\\hline
@@ -111,12 +114,12 @@ We obtain the speed of sound in water from Table \ref{data_tim} by linear fittin
 \end{table}
 \begin{figure}[H]
     \centering
-    \includegraphics[height=10cm]{images/lt.eps}
+  %  \includegraphics[height=10cm]{images/lt.eps}
     \caption{Fitting curve for $L\ vs.\ t$. (The errorbar is relatively \textbf{small})}\label{lt}
 \end{figure}
 \begin{figure}[H]
     \centering
-    \includegraphics[height=6cm]{images/ltinfo.png}
+    %\includegraphics[height=6cm]{images/ltinfo.png}
     \caption{Information for Fitting curve in Figure \ref{lt}}\label{ltinfo}
 \end{figure}
 
