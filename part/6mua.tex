@@ -25,54 +25,71 @@ the standard deviation of the average value can be caluculated as
       L_i-\overline{\Delta L})^2}. 
 \]
 
-Using the data from Table \ref{d1} we find that $s_{\overline{\Delta
-    L}}\approx 0.02188\e{-3}m$.
-Considering $t_{0.95}=2.26$ for $n=10$, the type-A uncertainty is estimated as
-$\Delta_{\Delta L,A}=2.26\times0.02188\e{-3}\approx 0.0494\e{-3}m$.
+From data of Table~\ref{d1} we get that
+$s_{\overline{\Delta L}} = 0.01919\e{-3}m$.
+Considering $t_{0.95}=2.26$ for $n=10$,
+the type-A uncertainty can be estimated as
+$\Delta_{\Delta L,A}=2.26 \times 0.01919\e{-3} = 0.0434\e{-3}m$.
 
 Thus the combined uncertainty is 
 
 \[
 \begin{split}
     &u_{\Delta L}=\sqrt{\Delta_{\Delta L,A}^2+\Delta_{\Delta
-        L,B}^2}=\sqrt{(0.0494\e{-3})^2+(0.014\e{-3})^2}\approx0.05\e{-3}m\\ 
-    &u_{r,\Delta L}=\frac{u_{\Delta L}}{\overline{\Delta L}}\times
-    100\%=\frac{0.05\e{-3}}{50.15\e{-3}}\times100\%=0.10\%\\ 
-    &\overline{\Delta L}=(50.16\pm 0.05)\e{-3}m,\quad u_{r,\Delta L}=0.10\% 
+        L,B}^2} \\
+    &= \sqrt{(0.0434\e{-3})^2+(0.014\e{-3})^2} \\
+    &= 0.045\e{-3}m\\ 
 \end{split}
 \]
-
-Similarly, we obtain the uncertainty of wavelength $\lambda=2\Delta L/n$
-
+    
 \[
 \begin{split}
-    &\frac{\partial \lambda}{\partial \Delta L}=\frac{2}{10}=\frac{1}{5},\\ 
-    &u_{\Delta L}=0.05\e{-3}m,\\
-    &u_{\lambda}=\sqrt{(\frac{\partial \lambda}{\partial \Delta L})^2\cdot 
-      (u_{\Delta L})^2}=\frac{1}{5}\times 0.05\e{-3}=0.01\e{-3}m,\\ 
-    &u_{r,\lambda}=\frac{u_{\lambda}}{\overline{\lambda}}\times 
-    100\%=\frac{0.01\e{-3}}{10.03\e{-3}}=0.10\%,\\ 
-    &\lambda=(10.03\pm0.01)\e{-3}m,\quad u_{r,\lambda}=0.10\%.
+    &u_{r,\Delta L}=\frac{u_{\Delta L}}{\overline{\Delta L}}\times
+    100\%=\frac{0.045\e{-3}}{50.94\e{-3}}\times100\% \\
+    &=0.09\%\\ 
 \end{split}
 \]
+$$\overline{\Delta L}=(50.94 \pm 0.05)\e{-3}m, u_{r,\Delta L}=0.10\% $$
+  
+
+In the same way, we obtain the uncertainty of wavelength $\lambda=2\Delta L/n$ 
+
+
+$$\frac{\partial \lambda}{\partial \Delta L}=\frac{2}{10}=\frac{1}{5}$$
+
+$$u_{\Delta L}=0.05\e{-3}m$$
+
+$$u_{\lambda}=\sqrt{(\frac{\partial \lambda}{\partial \Delta L})^2\cdot 
+  (u_{\Delta L})^2}
+  =\frac{1}{5}\times 0.05\e{-3}=0.01\e{-3}m$$
+
+$$u_{r,\lambda}=\frac{u_{\lambda}}{\overline{\lambda}}\times 
+100\%=\frac{0.01\e{-3}}{10.03\e{-3}}=0.10\%$$
+
+$$\lambda=(10.03\pm0.01)\e{-3}m,\quad u_{r,\lambda}=0.10\%$$
+
 
 and the uncertainty of the spped of sound in air $v=\lambda f$
 
+$$\frac{\partial v}{\partial \lambda}=f,
+\frac{\partial v}{\partial f}=\lambda$$
+
+$$u_{\lambda}=0.01\e{-3}m, 
+u_{f}=1Hz$$
+
 \[
 \begin{split}
-    &\frac{\partial v}{\partial \lambda}=f,\quad \frac{\partial v}{\partial
-      f}=\lambda,\\ 
-    &u_{\lambda}=0.01\e{-3}m,\quad u_{f}=1Hz,\\
-    &u_{v}=\sqrt{(\frac{\partial v}{\partial \lambda})^2\cdot
-      (u_{\lambda})^2+(\frac{\partial v}{\partial f})^2\cdot
-      (u_{f})^2}=\sqrt{(f)^2\cdot (u_{\lambda})^2+(\lambda)^2\cdot
-      (u_{f})^2},\\ 
-    &\quad =\sqrt{(35000)^2\cdot(0.01\e{-3})^2+(10.03\e{-3})^2\cdot(1)^2}
-    \approx0.4m/s,\\
-    &u_{r,v}=\frac{u_v}{\overline{v}}\times 100\%=\frac{0.4}{351.05}=0.10\%,\\
-    &v=351.05\pm0.4 m/s,\quad u_{r,v}=0.10\%.
+&u_{v}=\sqrt{(\frac{\partial v}{\partial \lambda})^2\cdot
+  (u_{\lambda})^2+(\frac{\partial v}{\partial f})^2\cdot
+  (u_{f})^2}=\sqrt{(f)^2\cdot (u_{\lambda})^2+(\lambda)^2\cdot
+  (u_{f})^2}\\ 
+&\quad =\sqrt{(35000)^2\cdot(0.01\e{-3})^2+(10.03\e{-3})^2\cdot(1)^2}
+\approx0.4m/s\\
 \end{split}
 \]
+
+$$u_{r,v}=\frac{u_v}{\overline{v}}\times 100\%=\frac{0.4}{351.05}=0.10\%$$
+$$v=351.05\pm0.4 m/s,\quad u_{r,v}=0.10\%$$
 
 \subsection{Uncertainty for phase comparison method}
 
