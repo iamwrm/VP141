@@ -1,1 +1,115 @@
 \section{Measurement Uncertainty Analysis}
+
+\subsection{Uncertainty for resonance method}
+    To determine the type-B uncertainty of $\Delta L$,
+    \[
+    \begin{split}
+        &\frac{\partial \Delta L}{\partial L_{10+i}}=1,\quad \frac{\partial \Delta L}{\partial L_i}=-1,\\
+        &u_{L_{10+i}}=u_{L_i}=\Delta_{dev}=1\e{-5}m,\\
+        &\Delta_{\Delta L,B}=\sqrt{(\frac{\partial \Delta L}{\partial L_{10+i}})^2\cdot (u_{L_{10+i}})^2+(\frac{\partial \Delta L}{\partial L_i})^2\cdot (u_{L_i})^2}\\
+        &\quad\quad =\sqrt{2}\times 1\e{-5}\approx0.014\e{-3}m.\\
+    \end{split}
+    \]
+
+    To estimate type-A uncertainty, the standard deviation of the average value is caluculated as
+    \[
+        s_{\overline{\Delta L}}=\sqrt{\frac{1}{n(n-1)}\sum_{i=1}^n(\Delta L_i-\overline{\Delta L})^2}.
+    \]
+
+    Uisng the data from Table \ref{data_res} we find that $s_{\overline{\Delta L}}\approx 0.02188\e{-3}m$. Considering $t_{0.95}=2.26$ for $n=10$, the type-A uncertainty is estimated as $\Delta_{\Delta L,A}=2.26\times0.02188\e{-3}\approx 0.0494\e{-3}m$.
+
+    Hence the combined uncertainty is 
+    \[
+    \begin{split}
+        &u_{\Delta L}=\sqrt{\Delta_{\Delta L,A}^2+\Delta_{\Delta L,B}^2}=\sqrt{(0.0494\e{-3})^2+(0.014\e{-3})^2}\approx0.05\e{-3}m\\
+        &u_{r,\Delta L}=\frac{u_{\Delta L}}{\overline{\Delta L}}\times 100\%=\frac{0.05\e{-3}}{50.15\e{-3}}\times100\%=0.10\%\\
+        &\overline{\Delta L}=(50.16\pm 0.05)\e{-3}m,\quad u_{r,\Delta L}=0.10\%
+    \end{split}
+    \].
+
+    Similarly, we obtain the uncertainty of wavelength $\lambda=2\Delta L/n$
+    \[
+    \begin{split}
+        &\frac{\partial \lambda}{\partial \Delta L}=\frac{2}{10}=\frac{1}{5},\\
+        &u_{\Delta L}=0.05\e{-3}m,\\
+        &u_{\lambda}=\sqrt{(\frac{\partial \lambda}{\partial \Delta L})^2\cdot (u_{\Delta L})^2}=\frac{1}{5}\times 0.05\e{-3}=0.01\e{-3}m,\\
+        &u_{r,\lambda}=\frac{u_{\lambda}}{\overline{\lambda}}\times 100\%=\frac{0.01\e{-3}}{10.03\e{-3}}=0.10\%,\\
+        &\lambda=(10.03\pm0.01)\e{-3}m,\quad u_{r,\lambda}=0.10\%.
+    \end{split}
+    \]
+    and the uncertainty of the spped of sound in air $v=\lambda f$
+    \[
+    \begin{split}
+        &\frac{\partial v}{\partial \lambda}=f,\quad \frac{\partial v}{\partial f}=\lambda,\\
+        &u_{\lambda}=0.01\e{-3}m,\quad u_{f}=1Hz,\\
+        &u_{v}=\sqrt{(\frac{\partial v}{\partial \lambda})^2\cdot (u_{\lambda})^2+(\frac{\partial v}{\partial f})^2\cdot (u_{f})^2}=\sqrt{(f)^2\cdot (u_{\lambda})^2+(\lambda)^2\cdot (u_{f})^2},\\
+        &\quad =\sqrt{(35000)^2\cdot(0.01\e{-3})^2+(10.03\e{-3})^2\cdot(1)^2}
+        \approx0.4m/s,\\
+        &u_{r,v}=\frac{u_v}{\overline{v}}\times 100\%=\frac{0.4}{351.05}=0.10\%,\\
+        &v=351.05\pm0.4 m/s,\quad u_{r,v}=0.10\%.
+    \end{split}
+    \]
+
+\subsection{Uncertainty for phase comparison method}
+    To determine the type-B uncertainty of $\Delta L$,
+    \[
+    \begin{split}
+        &\frac{\partial \Delta L}{\partial L_{6+i}}=1,\quad \frac{\partial \Delta L}{\partial L_i}=-1,\\
+        &u_{L_{6+i}}=u_{L_i}=\Delta_{dev}=1\e{-5}m,\\
+        &\Delta_{\Delta L,B}=\sqrt{(\frac{\partial \Delta L}{\partial L_{6+i}})^2\cdot (u_{L_{6+i}})^2+(\frac{\partial \Delta L}{\partial L_i})^2\cdot (u_{L_i})^2}\\
+        &\quad\quad =\sqrt{2}\times 1\e{-5}\approx0.014\e{-3}m.\\
+    \end{split}
+    \]
+
+    To estimate type-A uncertainty, the standard deviation of the average value is caluculated as
+    \[
+        s_{\overline{\Delta L}}=\sqrt{\frac{1}{n(n-1)}\sum_{i=1}^n(\Delta L_i-\overline{\Delta L})^2}.
+    \]
+
+    Uisng the data from Table \ref{data_pha} we find that $s_{\overline{\Delta L}}\approx 0.6485\e{-3}m$. Considering $t_{0.95}=2.57$ for $n=6$, the type-A uncertainty is estimated as $\Delta_{\Delta L,A}=2.57\times0.6485\e{-3}\approx 1.67\e{-3}m$.
+
+    Hence the combined uncertainty is 
+    \[
+    \begin{split}
+        &u_{\Delta L}=\sqrt{\Delta_{\Delta L,A}^2+\Delta_{\Delta L,B}^2}=\sqrt{(1.67\e{-3})^2+(0.014\e{-3})^2}\approx1.7\e{-3}m\\
+        &u_{r,\Delta L}=\frac{u_{\Delta L}}{\overline{\Delta L}}\times 100\%=\frac{1.7\e{-3}}{59.84\e{-3}}\times100\%\approx3\%\\
+        &\overline{\Delta L}=(59.84\pm 1.7)\e{-3}m,\quad u_{r,\Delta L}=3\%
+    \end{split}
+    \].
+
+    Similarly, we obtain the uncertainty of wavelength $\lambda=\Delta L/n$
+    \[
+    \begin{split}
+        &\frac{\partial \lambda}{\partial \Delta L}=\frac{1}{6},\\
+        &u_{\Delta L}=1.7\e{-3}m,\\
+        &u_{\lambda}=\sqrt{(\frac{\partial \lambda}{\partial \Delta L})^2\cdot (u_{\Delta L})^2}=\frac{1}{6}\times 1.7\e{-3}=0.3\e{-3}m,\\
+        &u_{r,\lambda}=\frac{u_{\lambda}}{\overline{\lambda}}\times 100\%=\frac{0.3\e{-3}}{9.973\e{-3}}=3\%,\\
+        &\lambda=(9.973\pm0.3)\e{-3}m,\quad u_{r,\lambda}=3\%.
+    \end{split}
+    \]
+    and the uncertainty of the spped of sound in air $v=\lambda f$
+    \[
+    \begin{split}
+        &\frac{\partial v}{\partial \lambda}=f,\quad \frac{\partial v}{\partial f}=\lambda,\\
+        &u_{\lambda}=0.3\e{-3}m,\quad u_{f}=1Hz,\\
+        &u_{v}=\sqrt{(\frac{\partial v}{\partial \lambda})^2\cdot (u_{\lambda})^2+(\frac{\partial v}{\partial f})^2\cdot (u_{f})^2}=\sqrt{(f)^2\cdot (u_{\lambda})^2+(\lambda)^2\cdot (u_{f})^2},\\
+        &\quad =\sqrt{(35000)^2\cdot(0.3\e{-3})^2+(9.97\e{-3})^2\cdot(1)^2}
+        \approx10m/s,\\
+        &u_{r,v}=\frac{u_v}{\overline{v}}\times 100\%=\frac{10}{348.95}=3\%,\\
+        &v=348.95\pm10 m/s,\quad u_{r,v}=3\%.
+    \end{split}
+    \]
+
+\subsection{Uncertainty for the time difference method (liquid)}
+    Using Matlab to plot the fitting curve of $L\ vs.\ t$, we obtain the  information of the fit automatically (See Figure \ref{ltinfo}). 
+    \[
+        v_{water}=1515\pm20 m/s.
+    \]
+    where $\pm 20m/s$ is the 0.95-confidence uncertainty, with $t_{0.95}=2.20$ when $n=12$. THe relative uncertainty is that
+    \[
+        u_{r,v}=\frac{u_v}{\bar{v}}\times100\%=\frac{20}{1515}=1.5\%.
+    \]
+    Hence the speed of sound in water is 
+    \[
+        v_{water}=1515\pm20m/s,\quad u_{r,v}=1.5\%.
+    \]
