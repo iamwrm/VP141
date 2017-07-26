@@ -1,0 +1,28 @@
+\contentsline {section}{\numberline {1}Introduction}{2}
+\contentsline {section}{\numberline {2}Experiment Setup}{3}
+\contentsline {subsection}{\numberline {2.1}Devices precision}{5}
+\contentsline {section}{\numberline {3}Measurement Procedure}{6}
+\contentsline {subsection}{\numberline {3.1}Natural angular frequency}{6}
+\contentsline {subsection}{\numberline {3.2}Damping coefficient}{6}
+\contentsline {subsection}{\numberline {3.3}$\theta _{st}$ vs. $\omega $ and $\varphi $ vs. $\omega $ Characteristics of forced oscillations}{7}
+\contentsline {section}{\numberline {4}Results}{7}
+\contentsline {subsection}{\numberline {4.1}Measurement for natural angular frequency}{7}
+\contentsline {subsection}{\numberline {4.2}Measurement for damping coefficient}{8}
+\contentsline {subsection}{\numberline {4.3}Measurement for $\theta _{st}$ vs. $\omega $ and $\varphi $ vs. $\omega $}{9}
+\contentsline {section}{\numberline {5}Measurement Uncetainty Analysis}{11}
+\contentsline {subsection}{\numberline {5.1}Uncertainty for natural angular frequency}{11}
+\contentsline {subsection}{\numberline {5.2}Uncertainty of damping coefficient}{12}
+\contentsline {subsection}{\numberline {5.3}Uncertainty of $\theta _{st}$ vs. $\omega $ and $\varphi $ vs. $\omega $}{13}
+\contentsline {section}{\numberline {6}Conclusion and Discussion}{14}
+\contentsline {subsection}{\numberline {6.1}Natural angular frequency}{14}
+\contentsline {subsubsection}{\numberline {6.1.1}Discussions}{14}
+\contentsline {subsubsection}{\numberline {6.1.2}Improvements and recommendations}{14}
+\contentsline {subsection}{\numberline {6.2}Damping coefficient}{14}
+\contentsline {subsubsection}{\numberline {6.2.1}Discussions}{14}
+\contentsline {subsubsection}{\numberline {6.2.2}Improvements and recommendations}{15}
+\contentsline {subsection}{\numberline {6.3}$\varphi $ vs. $\omega $}{15}
+\contentsline {subsubsection}{\numberline {6.3.1}Discussions}{15}
+\contentsline {subsubsection}{\numberline {6.3.2}Improvements and recommendations}{16}
+\contentsline {subsection}{\numberline {6.4}$\theta _{st}$ vs. $\omega $}{16}
+\contentsline {subsubsection}{\numberline {6.4.1}Discussions}{16}
+\contentsline {subsubsection}{\numberline {6.4.2}Improvements and recommendations}{16}
