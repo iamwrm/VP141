@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015/Debian) (preloaded format=xelatex 2017.5.24)  26 JUL 2017 09:39
+This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015/Debian) (preloaded format=xelatex 2017.5.24)  26 JUL 2017 21:11
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -593,15 +593,12 @@ Missing character: There is no ， in font cmr10!
 ) (./sections/uncertainty.tex [10] [11] [12] [13]) (./sections/conclusion.tex
 File: images/fitting.png Graphic file (type QTm)
 
-<use  "images/fitting.png" > [14] [15]) (./sections/ref.tex) [16] (./lab5.aux)
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
- ) 
+<use  "images/fitting.png" > [14] [15]) (./sections/ref.tex) [16] (./lab5.aux) 
+) 
 Here is how much of TeX's memory you used:
  11236 strings out of 495579
  234694 string characters out of 6187322
- 246365 words of memory out of 5000000
+ 246371 words of memory out of 5000000
  14418 multiletter control sequences out of 15000+600000
  14715 words of font info for 55 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
