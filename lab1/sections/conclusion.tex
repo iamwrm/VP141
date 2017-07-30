@@ -1,39 +1,38 @@
 \section{Conclusion and Discussion}
-\subsection{Natural angular frequency}
-\subsubsection{Discussions}
-    Although we know that the amplitude does not affect the oscillation period, we still try to control the initial position to be the same. It's because little frictional force is unavoidable, which will make the period longer than it should be. As the amplitude gets larger, the negative work done by the frictional force gets more obvious. The third measurement of ten periods is obviously larger tha nthe other three, which might result from the larger amplitude(see Table \ref{data_omega}). However, the experimental value of $\omega_0$ is reliable since its relative uncertainty of is 0.10\%.
+    In this exercise, we measure the corresponding physics quantities of the moment of inertia and calculate it by experiment. After that, we calculate the theoretical values of $I$ according to the moment of inertia formula we derive by integral. By comparison, we try to verify the parallel axis (Steiner's) theorem.
 
-\subsubsection{Improvements and recommendations}
-    As a device with high precision, the measurement result is quite precise although we only have four measuremnts. Despite that, I suppose controlling the amplitude is necessary to avoid the tiny friction.
+    Here list our final experimental and theoretical data again.
+    
+    \begin{table}[H] \small
+        \centering
+        \begin{tabular}{|c|c|c|c|c|c|}
+            \hline
+            & Theoretical value [$\e{-3}kg\cdot m^2$] & Experimental value [$\e{-3}kg\cdot m^2$] & $u_I$ [$\e{-3}kg\cdot m^2$] & $u_{I,r}$ [$\%$]\\\hline
+            $I_{disk}$ & 3.51 & 3.83 & 0.06 & 1.5\\\hline
+            $I_{hoop}$ & 5.08 & 5.44 & 0.07 & 1.2\\\hline
+            $I_{1,2}$ & 0.72 & 0.81 & 0.09 & 11\\\hline
+            $I_{3,4}$ & 1.91 & 2.07 & 0.05 & 3\\\hline
+        \end{tabular}
+        \caption{Results for the moments of inertia}\label{data_i}
+    \end{table}
+    
+    $For the disk$, the relative deviation is $(3.83-3.51)/3.51\times100\%=9\%$, which is out of its 0.95 confidence bound. However, we can basically know the moment of inertia through this experiment.
 
-\subsection{Damping coefficient}
-\subsubsection{Discussions}
-    The damping coefficient is calculated from the exponentially decreasing amplitude. In the calculation of damping coefficient, we apply successive difference method to eliminate the deviation. However, the precision is not satisefying because the relative uncertainty reaches 4\%. To be more specific, we want some other data processing methods.
+    $For the hoop$, the relative deviation is $$(5.44-5.08)/5.08\times100\%=7\%$$, which is also out of its 0.95 confidence bound, but still acceptable.
 
-\subsubsection{Improvements and recommendations}
-    Besides successive difference method, we can also apply curve fitting in this case. By exponential cauve fitting, we can also obtain the damping coefficient $\beta$ from $\theta_n=\theta_0e^{-\beta (nT)}$.
-    \begin{figure}[H]
-    \centering
-        \includegraphics[width=0.55\textwidth]{images/fitting}
-        \caption{Fitting curve information for $\beta$}\label{fitting}
-    \end{figure}
-    From the information of the exponential fitting cure, we find that its R-square value is quite close to 1, which means it's very likely to be an exponential function. We notice that the b value here, which presents $-\beta$, is $-0.06454\pm 0.0006s^{-1}$. Compared with our result by successive difference method $\beta=0.0657\pm 0.003s^{-1}$, the fitting value is more preicise. It shows that different methods to obtain some values are different in precision and reliability.
-
-\subsection{$\varphi$ vs. $\omega$}
-\subsubsection{Discussions}
-    Both of the $\varphi$ vs. $\omega$ curve are decreasing in the shape of arc cotangent (see Figure \ref{phi}). In theory we know that for the smaller damping coefficient, the left side curve of $\omega/\omega_0=1.0$ is higher than the other and the right side curve is lower than that. However, our results show that although the right half of the damping selection 3 curve is higher than damping selection 2 near the $\omega/\omega_0=1.0$, its gets lower quickly and beneath the damping selection 2, which is abnoraml. We recall the measurement procedure and conclude that it's blamed on the backslash error. During the second half of the experiment we thought the $\omega$ gap we chose is too small so we relatively quickly rotated the knob but made the gap too big. Therefore, we rotated the knob inversely to measure the middle $\omega$ again. Also, the time duration will be longer to reach the stable situation. This causes the second half of phase shifts to be smaller.
-
-\subsubsection{Improvements and recommendations}
-    During the experiment we find it hard to predict the phase shift. We can only see the strobe flashes and read the phase shift. There are two methods to this problem.
+    $For the cylinder case$, we can verify the parallel axis theorem. In the first case, the relative deviation is $$(0.81-0.72)/0.72\times100\%=11\%$$, which is just on 0.95 confidence bound point. In fact it shows that in this case the angular acceleration obtains larger uncertainty. In the second case, the relative deviation is $$(2.07-1.91)/1.91\times100\%=8\%$$, which is out of the 0.95 confidence bound. The possible reasons include
     \begin{enumerate}
-        \item Rotate the knob very carefully and be patient enough to read the phase shift for more times until it's stable. Patience can eliminate the deviation.
-        \item Redesign the machine. If there's an easier way to directly change the phase shift to the expected value, the entire experiment will be easy.
+        \item Shaking and displacement of the cylinders.
+        \item Displacement of rotating axis.
+        \item Change of frictional torque.
     \end{enumerate}
-    Whichever improvement we make, we have to be patient to ensure the oscillation is stable.
 
-\subsection{$\theta_{st}$ vs. $\omega$}
-\subsubsection{Discussions}
-    The shape of both curve are within our expectation (see Figure \ref{theta}). Obviously, the damping coeffiecient 2 is smaller than damping coeffiecient 3 beacuse the entire curve of damping selection 2 is above the curve of damping selection 3. we find that their beginning are roughly the same. However, it's hard to tell whether the peaks occur on the left or right hand side of the straight line $\omega/\omega_0=1.0$. In our expectation, the peaks should occur on the slightly left of the straight line. We suppose it's because the oscillation has not been stable yet. The value of $10T$ is smaller so that the calculated $\omega$ is larger than the real value, which makes the entire curve move rightwards. Therefore, the peak does not occur on the slightly left of $\omega/\omega_0=1.0$.
+    However, basically, the small deviation generally prove the parallel axis theorem.
 
-\subsubsection{Improvements and recommendations}
-    Sometimes we found the amplitude changes right after we recorded the periods. In order to make the result accurate, we still need patience. 
+    I find it interesting that all the experimental values are larger than the theoretical values. Based on the formula, the possible reason include the gravity and the frictional torque.
+    
+    The exact value of acceleration due to gravity might be smaller than the standard value I reference, which seems to strongly explain the phenomenon.
+
+    On the other hand, during my experiment I find that the string we use is fairly thick compared to the uncertainty. When it's winded, the radius of cone pulley rally changes greatly, let alone its friction.
+
+    For improvements, I suppose that we'd better obtain a more accurate value of $g$ and use a kind of fishing line, which is thin, strong and smooth, relatively. Also, we should eliminate the shaking of cylinders. Finally, we find that in the cylinder case, the moment of inertia is quite small. If the mass of cylinders are larger, the deviation will be smaller.

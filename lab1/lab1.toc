@@ -1,0 +1,28 @@
+\contentsline {section}{\numberline {1}Introduction}{2}
+\contentsline {subsection}{\numberline {1.1}Second law of dynamics for rotational motion}{2}
+\contentsline {subsection}{\numberline {1.2}Parallel axis theorem}{2}
+\contentsline {section}{\numberline {2}Experiment Setup}{3}
+\contentsline {subsection}{\numberline {2.1}Measurement setup and measurement method}{3}
+\contentsline {subsection}{\numberline {2.2}Measurement of angular acceleration}{4}
+\contentsline {subsection}{\numberline {2.3}Devices precision}{4}
+\contentsline {section}{\numberline {3}Measurement Procedure}{5}
+\contentsline {section}{\numberline {4}Results}{6}
+\contentsline {subsection}{\numberline {4.1}Measurements of distances}{6}
+\contentsline {subsection}{\numberline {4.2}Measurements of mass}{7}
+\contentsline {subsection}{\numberline {4.3}Measurements of the acceleration}{7}
+\contentsline {subsubsection}{\numberline {4.3.1}Measurements for empty turntable}{8}
+\contentsline {subsubsection}{\numberline {4.3.2}Measurements for turntable with disk}{9}
+\contentsline {subsubsection}{\numberline {4.3.3}Measurements for turntable with hoop}{10}
+\contentsline {subsubsection}{\numberline {4.3.4}Measurements for turntable with cylinder A in hole 1 and B in 2}{11}
+\contentsline {subsubsection}{\numberline {4.3.5}Measurements for turntable with cylinder A in hole 3 and B in 4}{12}
+\contentsline {subsection}{\numberline {4.4}Calculations for the moment of inertia}{13}
+\contentsline {subsection}{\numberline {4.5}Calculations for theoretical value of moment of inertia}{14}
+\contentsline {subsubsection}{\numberline {4.5.1}Theoretical Moment inertia of disk}{14}
+\contentsline {subsubsection}{\numberline {4.5.2}Theoretical Moment inertia of hoop}{14}
+\contentsline {subsubsection}{\numberline {4.5.3}Theoretical Moment inertia of cylinder condition}{15}
+\contentsline {section}{\numberline {5}Measurement Uncetainty Analysis}{15}
+\contentsline {subsection}{\numberline {5.1}Uncertainty for distances}{15}
+\contentsline {subsection}{\numberline {5.2}Uncertainty of mass measurements}{16}
+\contentsline {subsection}{\numberline {5.3}Uncertainty of angular acceleration}{17}
+\contentsline {subsection}{\numberline {5.4}Uncertainty of the moment of inertia}{17}
+\contentsline {section}{\numberline {6}Conclusion and Discussion}{18}
