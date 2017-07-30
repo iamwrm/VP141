@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015/Debian) (preloaded format=xelatex 2017.5.24)  30 JUL 2017 17:23
+This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015/Debian) (preloaded format=xelatex 2017.5.24)  30 JUL 2017 21:40
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -620,7 +620,7 @@ Overfull \hbox (23.92914pt too wide) in paragraph at lines 8--16
  [][] 
  []
 
-[18]) (./sections/ref.tex) [19] [20] (./lab1.aux)
+[18]) (./sections/ref.tex [19]) [20] (./lab1.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
