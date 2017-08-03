@@ -7,7 +7,7 @@ We calculate the angular frequency from Table~\ref{data_omega} by the formula
 \[
 \omega_0=\frac{2\pi}{T}.
 \]
-\begin{table}[H] \small
+\begin{table}[H] 
 \centering
 \begin{tabular}{|c|c|}
 \hline
@@ -24,53 +24,65 @@ We calculate the angular frequency from Table~\ref{data_omega} by the formula
 Hence the average value of $10T$ should be calculated as
 
 \[
-\overline{10T}=\frac{1}{4}\sum_{i=1}^{4}(10T)_i=15.79225 \pm 0.0107 s, \quad u_{10T,r}=0.07\%.
+\overline{10T}=\frac{1}{4}\sum_{i=1}^{4}(10T)_i=15.79225 \pm 0.0107 \ s, \quad
+u_{10T,r}=0.07\%. 
 \]
 
 The value of $\omega_0$ is
 
 \[
-\overline{\omega_0}=\frac{20\pi}{10T}=\frac{20\times3.1416}{15.79225}= 3.9787 \pm 0.006 rad/s,\quad u_{\omega_0,r}=0.15\%.
+\overline{\omega_0}=\frac{20\pi}{10T}=\frac{20\times3.1416}{15.79225}= 3.9787
+\pm 0.006 \  rad/s,\quad u_{\omega_0,r}=0.15\%. 
 \]
 
 \subsection{Measurement for damping coefficient}
 
-The damping coefficient can be calculated by the formula below.
+The damping coefficient can be calculated by the following formula.
 
 \[
 \beta=\frac{1}{5T}\ln\frac{\theta_i}{\theta_{i+5}}.
 \]
 
-\begin{table}[H] \small
+
+In the experiment, we choose Damping Selection 2.
+
+\begin{table}[H] 
 \centering
+
 \begin{tabular}{|c|c|c|c|c|}
 \hline
+
 \multicolumn{2}{|c}{Amplitude[$\degree$]$\pm$1[$\degree$]} & 
 \multicolumn{2}{|c|}{Amplitude[$\degree$]$\pm$1[$\degree$]} &
 $\ln(\theta_i/\theta_{i+5})$\\\hline
-$\theta_0$ & 89 & $\theta_5$ & 54 & 0.500\\\hline
-$\theta_1$ & 81 & $\theta_6$ & 49 & 0.503\\\hline
-$\theta_2$ & 73 & $\theta_7$ & 44 & 0.506\\\hline
-$\theta_3$ & 66 & $\theta_8$ & 40 & 0.501\\\hline
-$\theta_4$ & 60 & $\theta_9$ & 36 & 0.511\\\hline
-\multicolumn{4}{|c|}{The average value of $\ln(\theta_i/\theta_{i+5})$} & 0.504\\\hline
+
+$\theta_0$ & 149 & $\theta_5$ & 95 & 0.4501 \\\hline
+$\theta_1$ & 136 & $\theta_6$ & 86 & 0.4583 \\\hline
+$\theta_2$ & 124 & $\theta_7$ & 79 & 0.4508 \\\hline
+$\theta_3$ & 114 & $\theta_8$ & 72 & 0.4595 \\\hline
+$\theta_4$ & 103 & $\theta_9$ & 65 & 0.4603 \\\hline
+\multicolumn{4}{|c|}{The average value of $\ln(\theta_i/\theta_{i+5})$}
+    & 0.4558 \\\hline 
 \end{tabular}
-\caption{Measurement of the damping coefficient}\label{data_damping}
+
+\caption{Measurement of the damping coefficient for Damping Selection 2}
+\label{data_damping}
 \end{table}
 
 The experimental value of $\ln(\theta_i/\theta_{i+5})$ is shown below
 
 \[
-\ln(\theta_i/\theta_{i+5})=0.511\pm0.022 [no\ unit], \quad u_r=4\%
+\ln(\theta_i/\theta_{i+5})= 0.4558 \pm 0.0050 , \quad u_r=1.09\%
 \]
 
-Here, $T=15.561/10=1.5561\pm0.0001s$. Then we can easily obtain $\beta$ as well,
+Here, $T= 15.79225 /10= 1.5792 \pm 0.0001s$. Then we can easily obtain $\beta$ as well,
 
 \[
-\beta=\frac{1}{5\times1.5561}\times0.511=0.0657\pm 0.003s^{-1}, \quad u_{\beta,r}=4\%
+\beta=\frac{1}{5\times1.5792}\times0.4558=  0.0577 \pm 0.003s^{-1}, \quad u_{\beta,r}=5.2\%
 \]
 
 \subsection{Measurement for $\theta_{st}$ vs. $\omega$ and $\varphi$ vs. $\omega$}
+
     To study the relation between $\varphi$ and $\omega/\omega_0$, we process the raw data and list them in Table \ref{data_phi2} and \ref{data_phi3}.
     \begin{figure}[H]
     \centering
