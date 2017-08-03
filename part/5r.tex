@@ -1,67 +1,74 @@
 \section{Result}
 
-
-
 \section{Results}
+
 \subsection{Measurement for natural angular frequency}
-    We calculate the angular frequency from Table \ref{data_omega} by the fomula
-    \[
-        \omega_0=\frac{2\pi}{T}.
-    \]
-    \begin{table}[H] \small
-        \centering
-        \begin{tabular}{|c|c|}
-        \hline
-            & $10T[s] \pm 0.001[s]$\\\hline
-            1 & 15.481\\\hline
-            2 & 15.480\\\hline
-            3 & 15.496\\\hline
-            4 & 15.481\\\hline
-        \end{tabular}
-        \caption{Measurement of ten periods}\label{data_omega}
-    \end{table}
+We calculate the angular frequency from Table~\ref{data_omega} by the formula
+\[
+\omega_0=\frac{2\pi}{T}.
+\]
+\begin{table}[H] \small
+\centering
+\begin{tabular}{|c|c|}
+\hline
+& $10T[s] \pm 0.001[s]$\\\hline
+1 & 15.790  \\\hline
+2 & 15.801  \\\hline
+3 & 15.778  \\\hline
+4 & 15.800  \\\hline
+\end{tabular}
+\caption{Measurement of ten periods for the natural frequency}
+\label{data_omega}
+\end{table}
 
-    Hence the average value of $10T$ should be calculated as
-    \[
-        \overline{10T}=\frac{1}{4}\sum_{i=1}^{4}(10T)_i=15.485 \pm 0.017 s, \quad u_{10T,r}=0.11\%.
-    \]
+Hence the average value of $10T$ should be calculated as
 
-    THe value of $\omega_0$ is
-    \[
-        \overline{\omega_0}=\frac{20\pi}{10T}=\frac{20\times3.1416}{15.485}=4.058\pm 0.004rad/s,\quad u_{\omega_0,r}=0.10\%.
-    \]
+\[
+\overline{10T}=\frac{1}{4}\sum_{i=1}^{4}(10T)_i=15.79225 \pm 0.0107 s, \quad u_{10T,r}=0.07\%.
+\]
+
+The value of $\omega_0$ is
+
+\[
+\overline{\omega_0}=\frac{20\pi}{10T}=\frac{20\times3.1416}{15.79225}= 3.9787 \pm 0.006 rad/s,\quad u_{\omega_0,r}=0.15\%.
+\]
 
 \subsection{Measurement for damping coefficient}
-    The damping coeffiecient can be calculated by the formula below.
-    \[
-        \beta=\frac{1}{5T}\ln\frac{\theta_i}{\theta_{i+5}}.
-    \]
-    \begin{table}[H] \small
-        \centering
-        \begin{tabular}{|c|c|c|c|c|}
-        \hline
-            \multicolumn{2}{|c}{Amplitude[$\degree$]$\pm$1[$\degree$]} & 
-            \multicolumn{2}{|c|}{Amplitude[$\degree$]$\pm$1[$\degree$]} &
-            $\ln(\theta_i/\theta_{i+5})$\\\hline
-            $\theta_0$ & 89 & $\theta_5$ & 54 & 0.500\\\hline
-            $\theta_1$ & 81 & $\theta_6$ & 49 & 0.503\\\hline
-            $\theta_2$ & 73 & $\theta_7$ & 44 & 0.506\\\hline
-            $\theta_3$ & 66 & $\theta_8$ & 40 & 0.501\\\hline
-            $\theta_4$ & 60 & $\theta_9$ & 36 & 0.511\\\hline
-            \multicolumn{4}{|c|}{The average value of $\ln(\theta_i/\theta_{i+5})$} & 0.504\\\hline
-        \end{tabular}
-        \caption{Measurement of the damping coefficient}\label{data_damping}
-    \end{table}
 
-    The expermental value of $\ln(\theta_i/\theta_{i+5})$ is shown below
-    \[
-        \ln(\theta_i/\theta_{i+5})=0.511\pm0.022 [no\ unit], \quad u_r=4\%
-    \]
+The damping coefficient can be calculated by the formula below.
 
-    Here, $T=15.561/10=1.5561\pm0.0001s$. Then we can easily obtain $\beta$ as well,
-    \[
-        \beta=\frac{1}{5\times1.5561}\times0.511=0.0657\pm 0.003s^{-1}, \quad u_{\beta,r}=4\%
-    \]
+\[
+\beta=\frac{1}{5T}\ln\frac{\theta_i}{\theta_{i+5}}.
+\]
+
+\begin{table}[H] \small
+\centering
+\begin{tabular}{|c|c|c|c|c|}
+\hline
+\multicolumn{2}{|c}{Amplitude[$\degree$]$\pm$1[$\degree$]} & 
+\multicolumn{2}{|c|}{Amplitude[$\degree$]$\pm$1[$\degree$]} &
+$\ln(\theta_i/\theta_{i+5})$\\\hline
+$\theta_0$ & 89 & $\theta_5$ & 54 & 0.500\\\hline
+$\theta_1$ & 81 & $\theta_6$ & 49 & 0.503\\\hline
+$\theta_2$ & 73 & $\theta_7$ & 44 & 0.506\\\hline
+$\theta_3$ & 66 & $\theta_8$ & 40 & 0.501\\\hline
+$\theta_4$ & 60 & $\theta_9$ & 36 & 0.511\\\hline
+\multicolumn{4}{|c|}{The average value of $\ln(\theta_i/\theta_{i+5})$} & 0.504\\\hline
+\end{tabular}
+\caption{Measurement of the damping coefficient}\label{data_damping}
+\end{table}
+
+The experimental value of $\ln(\theta_i/\theta_{i+5})$ is shown below
+
+\[
+\ln(\theta_i/\theta_{i+5})=0.511\pm0.022 [no\ unit], \quad u_r=4\%
+\]
+
+Here, $T=15.561/10=1.5561\pm0.0001s$. Then we can easily obtain $\beta$ as well,
+
+\[
+\beta=\frac{1}{5\times1.5561}\times0.511=0.0657\pm 0.003s^{-1}, \quad u_{\beta,r}=4\%
+\]
 
 \subsection{Measurement for $\theta_{st}$ vs. $\omega$ and $\varphi$ vs. $\omega$}
     To study the relation between $\varphi$ and $\omega/\omega_0$, we process the raw data and list them in Table \ref{data_phi2} and \ref{data_phi3}.
