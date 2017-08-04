@@ -72,3 +72,26 @@ raw2=[15.057	-163	 35
 t0=15.79225;
 praw1=[  t0./raw1(:,1), raw1(:,2)];
 praw2=[  t0./raw2(:,1), raw2(:,2)];
+
+tenT1=raw1(:,1);
+x1=20*pi./tenT1/3.9787;
+phi1=raw1(:,2);
+
+errx = sqrt((20.*pi./(tenT1).^2./4.058).^2.*(0.001).^2+...
+    (20.*pi./tenT1./4.058^2).^2.*(0.004).^2 )
+erry = 1*ones(size(phi1));
+errorbar(x1,phi1,erry,erry,errx,errx);
+hold on;
+
+tenT2= raw2(:,1);
+x2=20*pi./tenT2/3.9787;
+phi2= raw2(:,2);
+
+errx = sqrt((20.*pi./(tenT2).^2./4.058).^2.*(0.001).^2+...
+    (20.*pi./tenT2./4.058^2).^2.*(0.004).^2 )
+erry = 1*ones(size(phi2));
+errorbar(x2,phi2,erry,erry,errx,errx);
+xlabel('\omega/\omega_0');
+ylabel('Phase shift \phi(^\circ)');
+legend('Damping selection 2','Damping selection 3');
+grid;
