@@ -1,14 +1,7 @@
 *.DS_Store
 *.fdb_latexmk
-<<<<<<< HEAD
 *.out
-=======
-*.pdf
-*.out
-part/auto/
-# Added by iamwrm@gmail.com
 
->>>>>>> 14c4f6df862b09464f249bdaf87ad0550dd94e04
 # Created by https://www.gitignore.io/api/latex
 
 ### LaTeX ###

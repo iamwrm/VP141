@@ -1,0 +1,70 @@
+\section{Introduction}
+
+The objective of this exercise is to study damped and driven oscillations in
+mechanical systems using the Pohl resonator. For driven oscillations, we will
+also observe and quantify the mechanical resonance phenomenon. 
+    
+If a periodically varying external force is applied to a damped harmonic
+oscillator, the resulting motion is called forced (or driven) oscillations, and
+the external force is called the driving force. Assuming that the driving force
+is of the form 
+    \[
+        F=F_0(sin\omega t+\delta),
+    \]
+with the amplitude F 0 and angular frequency ω, the resulting steady-state
+forced oscillations will be simple harmonic with the angular frequency equal to
+that of the driving force. The amplitude of these steady-state oscillations
+turns out to depend on the angular frequency of the the driving force, in
+particular on how far it is from the natural angular frequency, and the damping
+coefficient. The amplitude may become quite large, and this phenomenon is known
+as the mechanical resonance. 
+
+Another interesting property of driven steady-state oscillations is the fact
+that there is a phase lag between the driving force and the displacement from
+the equilibrium position of the oscillating particle. This phase lag reaches
+$\pi/2$ (a quarter of the cycle) when the system is driven at the natural
+angular frequency.
+    
+In this experiment, forced oscillation of a balance wheel will be studied. The
+corresponding quantities (such as the force and the position) will be replaced
+by their angular counterparts. 
+
+The driving torque $\tau_{dr}=\tau_0cos\omega t$ and a damping torque
+$\tau_f=-b\frac{d\theta}{dt}$, Also, we know the restoring torque
+$\tau=-k\theta$, its equation od motion is of the form 
+
+\begin{equation}
+\label{1}
+I\frac{d^2\theta}{dt^2}=-k\theta-b\frac{d\theta}{dt}+\tau_0cos\omega t,
+\end{equation}
+
+where I is the moment of inertia of the balance wheel, $\tau_0$ is the amplitude
+of the driving torque, and $\omega$ is the angular frequency of the driving
+torque. Introducing the symbols 
+
+\[
+\omega_0=\frac{k}{I},\quad 2\beta=\frac{b}{I}, \quad \mu=\frac{\tau_0}{I}, 
+\]
+
+Eq. \ref{1} can be rewitten as
+\begin{equation}
+\label{2}
+\frac{d^2\theta}{dt^2}+2\beta\frac{d\theta}{dt}+\omega_0^2\theta
+=\mu cos\omega t.
+\end{equation}
+
+Thw solution to Eq \ref{2} is
+\[
+\theta(t)=\theta_{tr}(t)+\theta_{st}cos(\omega t+\varphi),
+\]
+where the former term $\theta_{tr}$ denotes the transient solution that vanished
+exponentially as $t\rightarrow \infty$. The steady-state  oscillation is with
+the amplitude 
+\[
+\theta_{st}=\frac{\mu}{\sqrt{(\omega_0^2-\omega^2)^2+4\beta^2\omega^2}}
+\]
+For small values of the damping coefficient $\beta$, the resonance angular
+frequency is close to the the natural angular frequency, and the amplitude of
+steady-state oscillations becomes large. The dependence of both the amplitude
+and the phase shift on the driving angular frequency are shown in the left and
+right Figure 1, respectively, for different values of the damping coefficient.
