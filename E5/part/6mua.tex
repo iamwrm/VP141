@@ -1,0 +1,145 @@
+\section{Measurement Uncertainty Analysis}
+
+\subsection{Uncertainty for natural angular frequency}
+
+To estimate type-A uncertainty of $(10T)$,
+the standard deviation of the average value can be calculated as
+
+\[
+\begin{split}
+&t_{0.95}=3.18,\quad n=4,\\
+&s_{\overline{10T}}=\sqrt{\frac{1}{n(n-1)}\sum_{i=1}^n((10T)_i-\overline{10T})^2}.\\ 
+&\Delta_{10T,A}=\frac{3.18}{\sqrt{4}}\times0.0076811\approx 0.017s.
+\end{split}
+\]
+
+The type-B uncertainty of $(10T)$ is 0.001s. Hence, the uncertainty of $(10T)$ is
+
+$$ u_{10T}=\sqrt{\Delta_A^2+\Delta_B^2}=\sqrt{0.017^2+0.001^2}\approx 0.017s $$  
+
+For the uncertainty of $\omega_0$,
+
+$$\omega_0=\frac{20\pi}{10T},\quad \frac{\partial \omega_0}{\partial
+  (10T)}=-\frac{20\pi}{(10T)^2}$$ 
+
+\[
+\begin{split}
+&u_{\omega_0}=\sqrt{\frac{\partial \omega_0}{\partial
+    (10T)}^2(u_{10T})^2}=\frac{20\pi}{(10T)^2}u_{(10T)}\\
+&=\frac{20\times3.1416}{15.485^2} \times 0.017 = 0.004rad/s,\\  
+\end{split}
+\]
+
+$$ u_{\omega_0,r}=\frac{u_{\omega_0}}{\omega_0}\times100\%
+=\frac{0.004}{4.058}=0.10\% $$ 
+
+\subsection{Uncertainty of damping coefficient}
+
+The type-A uncertainty of $\ln(\theta_i/\theta_{i+5})$ can be determined by
+calculating $s\times t_{0.95}/\sqrt{n}$.
+
+Let $k = s \times t_{0.95}/\sqrt{n}$.
+
+
+$$ t_{0.95}=2.78,\quad n=5$$ 
+
+$$ \Delta_{A,k}=t_{0.95}/\sqrt{5}\times
+\sqrt{\frac{1}{5-1}\sum_{i=1}^5(k_i-\bar{k})^2}=2.78/\sqrt{5}\times
+0.00444 = 0.005 $$ 
+
+Then, for the type-B uncertainty, 
+
+$$ \frac{\partial k}{\partial \theta_{i}}=\frac{1}{\theta_i} $$
+$$ \frac{\partial k}{\partial \theta_{i+5}}=-\frac{1}{\theta_{i+5}} $$ 
+$$ \Delta_{B,k}=\sqrt{\frac{\partial k}{\partial
+    \theta_{i}}^2(u_{\theta_i})^2+\frac{\partial k}{\partial
+    \theta_{i+5}}^2(u_{\theta_{i+5}})^2}
+=\sqrt{(\frac{u_{\theta_i}}{\theta_i})^2+(\frac{u_{\theta_{i+5}}}{\theta_{i+5}})^2}  $$ 
+
+
+When $i=0$, $\theta_0=89\degree$, $u_{\theta_2}=1\degree$,
+$\theta_5=54\degree$, $u_{\theta_5}=1\degree$. 
+
+\[
+\Delta_{B,k}=\sqrt{(\frac{1}{89})^2+(\frac{1}{54})^2}=0.022 
+\]
+
+Considering the type-B uncertainty of $\ln(\theta_i/\theta_{i+5})$, the combined
+uncertainty is 
+
+\[
+\begin{split}
+u_{k}&=\sqrt{(0.005)^2+(0.022)^2}= 0.022,\\
+u_{k,r}&=\frac{u_k}{\bar{k}}\times100\%=\frac{0.022}{0.511}\times100\%=4\%
+\end{split}
+\]
+
+Hence
+
+$$ \ln(\theta_i/\theta_{i+5})=0.456\pm0.005, \quad u_r=1.09\% $$ 
+
+For $10T=15.792 \pm 0.001s$, we know that
+\[
+T=1.5792\pm0.0001s, \quad u_{r,T}=0.006\%.
+\]
+
+Then calculate the uncertainty of $\beta=\ln(\theta_i/\theta_{i+5})/(5T)$.
+
+$$ \frac{\partial \beta}{\partial T}=-\frac{k}{5T^2}$$ 
+
+$$ \frac{\partial \beta}{\partial k}=\frac{1}{5T} $$
+
+\[
+\begin{split}
+u_{\beta}&=\sqrt{(\frac{\partial \beta}{\partial T})^2(u_T)^2+(\frac{\partial
+    \beta}{\partial k})^2(u_k)^2}  
+=\sqrt{(\frac{k^2}{25T^4})(u_T)^2+(\frac{1}{25T^2})(u_k)^2}\\
+&=\sqrt{(\frac{0.511^2}{25\times1.5792^4})(0.0001^2)+(\frac{0.022^2}{25\times1.579
+    2^2})}  \\ 
+&= 0.003s^{-1} 
+\end{split}
+\]
+
+where $k=\ln(\theta_i/\theta_{i+5})$.
+
+Thus, 
+
+\[
+\beta=0.0648\pm 0.003s^{-1}, \quad u_{\beta,r}=5\%
+\]
+
+
+% TODO:
+
+\subsection{Uncertainty of $\theta_{st}$ vs. $\omega$ and $\varphi$ vs. $\omega$}
+
+We denote that $r=\omega/\omega_0$.
+To determine the uncertainty of ratio, we know that
+
+$$ r=\frac{20\pi}{10T\omega_0} $$ 
+$$ \frac{\partial r}{\partial (10T)}=-\frac{20\pi}{(10T)^2\omega_0} $$ 
+$$ \frac{\partial r}{\partial \omega_0}=-\frac{20\pi}{(10T)\omega_0^2} $$
+
+\[
+\begin{split}
+u_{r}&=\sqrt{(\frac{\partial r}{\partial
+    (10T)})^2(u_{10T})^2+(\frac{\partial r}{\partial
+    \omega_0})^2(u_{\omega_0})^2}\\ 
+&=\sqrt{\frac{400\pi^2}{(10T)^4\omega_0^2}(u_{10T})^2+\frac{400\pi^2}{(10T)^2\omega_0^4}(u_{\omega_0})^2}.
+\end{split}
+\]
+
+As is calculated before, $\omega_0=3.9787 \pm 0.006 \ rad/s$.
+
+For instance, when $10T= 15.79225  \pm 0.001s$, the uncertainty of $r$ is
+\[
+u_{r}=\sqrt{\frac{400\times3.1416^2}{15.79225 ^4\times 3.9787^2}(0.001)^2
+  +\frac{400\times3.1416^2}{15.79225^2\times3.9787^4}(0.004)^2}=0.0009
+\] 
+
+For the uncertainty of $\varphi$ and $\theta$, these two data only obtain type-B
+uncertainty, so the combined uncertainty of them are both equal to
+$\Delta_B=1\degree$, thus 
+
+$$ u_{\varphi}=1\degree $$
+$$ u_{\theta}=1\degree. $$

@@ -1,0 +1,64 @@
+\section{Measurement Uncertainty Analysis}
+
+
+\subsection{Uncertainty of instruments}
+For a single measurement of the mass of the experiment setup, the uncertainty of the measurement instruments are
+
+\begin{table}[H]
+  \centering
+  \begin{tabularx}{\textwidth}{|X|X|X|X|}
+    \hline
+     & Calliper & Electronic balance & Timer\\
+	 \hline
+	 Resolution & 0.002cm & 0.1g & 0.0001s \\
+	 \hline
+	 Relative uncertainty &\multicolumn{2}{c|}{}& 0.004\% \\
+	\hline
+  \end{tabularx}
+  \caption{Precision of the measurement instruments}
+  \end{table}
+
+\subsection{Uncertainty of Calliper Measurements}
+
+In order to estimate type–A uncertainty of the period, the standard deviation of the average value is calculated as
+$$  s_d = \sqrt{\frac{1}{n-1}\sum_{i=1}^{n}(d_i - \bar{d})^2 }  $$
+
+Thus, the standard deviation of the average value is calculated and shown below
+
+\begin{table}[H]
+  \centering
+  \begin{tabularx}{\textwidth}{|p{6cm}|X|}
+    \hline
+    Object & The standard deviation\\
+    \hline
+    Disk $[cm]$& 0.0020 \\
+    Hoop 1 $[cm]$& 1.1003 \\
+    Hoop 2 $[cm]$& 1.1017 \\
+    Cylinder A $[cm]$& 0 \\
+    Cylinder B $[cm]$& 0 \\
+    Cone pulley $[cm]$& 0.0075 \\
+    \hline
+  \end{tabularx}
+  \caption{The standard deviation}
+  \end{table}
+
+
+The uncertainty of Timer is $\pm 0.0001s $ and $\pm 0.004\%$
+
+From the equation to calculate the moment of inertia,
+$$ I_1=\frac{mR(g-R\beta_2)}{\beta_2-\beta_1} $$
+$$ u_F = \sqrt{(\frac{\partial I}{\partial m})^2(u_m)^2 +   (\frac{\partial I}{\partial R})^2(u_R)^2+(\frac{\partial I}{\partial \beta_1 })^2(u_{\beta_1})^2+ (\frac{\partial I}{\partial \beta_2})^2(u_{\beta_2})^2   }$$
+
+$$\frac{\partial I}{\partial m} = \frac{R\left(g-\beta _2 R\right)}{\beta _2-\beta _1} $$
+$$\frac{\partial I}{\partial R} = -\frac{\beta _2 m R'\left(g-\beta _2 R\right)}{\beta _2-\beta _1} $$
+$$\frac{\partial I}{\partial \beta_1} = \frac{m R\left(g-\beta _2 R\right)}{\left(\beta _2-\beta _1\right){}^2} $$
+$$\frac{\partial I}{\partial \beta_2} = -\frac{m R R'\left(g-\beta _2 R\right)}{\beta _2-\beta _1}-\frac{m R\left(g-\beta _2 R\right)}{\left(\beta _2-\beta _1\right){}^2} $$
+
+
+$$ u_m = 0.1 g $$
+$$ u_R = 0.0075 cm $$
+$$ u_{\beta_1} = \sqrt{(0.0001 s)^2+(0.0001 \times 95 \% )^2} =0.000137931 $$
+$$ u_{\beta_1} = \sqrt{(0.0001 s)^2+(0.0001 \times 95 \% )^2} =0.000137931 $$
+
+Thus, 
+$$u_{rF} =  0.4\%$$
