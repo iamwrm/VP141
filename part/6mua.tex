@@ -1,1 +1,112 @@
 \section{Measurement Uncertainty Analysis}
+
+\subsection{Uncertainty for natural angular frequency}
+    First, we will get the uncertainty of $(10T)$.
+
+    To estimate type-A uncertainty of $(10T)$, the standard deviation of the average value is caluculated as
+    \[
+    \begin{split}
+        &t_{0.95}=3.18,\quad n=4,\\
+        &s_{\overline{10T}}=\sqrt{\frac{1}{n(n-1)}\sum_{i=1}^n((10T)_i-\overline{10T})^2}.\\
+        &\Delta_{10T,A}=\frac{3.18}{\sqrt{4}}\times0.0076811\approx 0.017s.
+    \end{split}
+    \]
+
+    The type-B uncertainty of $(10T)$ is 0.001s. Hence, the uncertainty of $(10T)$ is
+    \[
+        u_{10T}=\sqrt{\Delta_A^2+\Delta_B^2}=\sqrt{0.017^2+0.001^2}\approx 0.017s
+    \]
+
+    Hence, considering the uncertainty of $\omega_0$,
+    \[
+    \begin{split}
+        &\omega_0=\frac{20\pi}{10T},\quad \frac{\partial \omega_0}{\partial (10T)}=-\frac{20\pi}{(10T)^2}\\
+        &u_{\omega_0}=\sqrt{\frac{\partial \omega_0}{\partial (10T)}^2(u_{10T})^2}=\frac{20\pi}{(10T)^2}u_{(10T)}=\frac{20\times3.1416}{15.485^2}\times0.017\approx0.004rad/s,\\
+        &u_{\omega_0,r}=\frac{u_{\omega_0}}{\omega_0}\times100\%=\frac{0.004}{4.058}=0.10\%
+    \end{split}
+    \]
+
+\subsection{Uncertainty of damping coefficient}
+    The type-A uncertainty of $\ln(\theta_i/\theta_{i+5})$ can be determined by calculating $s\times t_{0.95}/\sqrt{n}$. Here we denote it as k. Hence
+    \[
+    \begin{split}
+        t_{0.95}&=2.78,\quad n=5\\
+        \Delta_{A,k}&=t_{0.95}/\sqrt{5}\times \sqrt{\frac{1}{5-1}\sum_{i=1}^5(k_i-\bar{k})^2}=2.78/\sqrt{5}\times 0.00444\approx0.005[no\ unit]
+    \end{split}
+    \]
+
+    Then, for the type-B uncertainty, we calculate the propagated uncertainty.
+    \[
+    \begin{split}
+        \frac{\partial k}{\partial \theta_{i}}&=\frac{1}{\theta_i},\\
+        \frac{\partial k}{\partial \theta_{i+5}}&=-\frac{1}{\theta_{i+5}},\\
+        \Delta_{B,k}&=\sqrt{\frac{\partial k}{\partial \theta_{i}}^2(u_{\theta_i})^2+\frac{\partial k}{\partial \theta_{i+5}}^2(u_{\theta_{i+5}})^2}
+        =\sqrt{(\frac{u_{\theta_i}}{\theta_i})^2+(\frac{u_{\theta_{i+5}}}{\theta_{i+5}})^2}
+    \end{split}
+    \]
+
+    \textbf{For example}, when $i=0$, $\theta_0=89\degree$, $u_{\theta_2}=1\degree$, $\theta_5=54\degree$, $u_{\theta_5}=1\degree$.
+    \[
+        \Delta_{B,k}=\sqrt{(\frac{1}{89})^2+(\frac{1}{54})^2}=0.022[no\ unit]
+    \]
+
+    Choose the example propagated uncertainty as the type-B uncertainty of $\ln(\theta_i/\theta_{i+5})$. Thus the combined uncertainty is 
+    \[
+    \begin{split}
+        u_{k}&=\sqrt{(0.005)^2+(0.022)^2}\approx0.022[no\ unit],\\
+        u_{k,r}&=\frac{u_k}{\bar{k}}\times100\%=\frac{0.022}{0.511}\times100\%=4\%
+    \end{split}
+    \]
+
+    Hence
+    \[
+        \ln(\theta_i/\theta_{i+5})=0.511\pm0.022, \quad u_r=4\%
+    \]
+
+    For $10T=15.561\pm0.001s$, we know that
+    \[
+        T=1.5561\pm0.0001s, \quad u_{r,T}=0.006\%.
+    \]
+
+    Then we will calculate the uncertainty of $\beta=\ln(\theta_i/\theta_{i+5})/(5T)$.
+    \[
+    \begin{split}
+        \frac{\partial \beta}{\partial T}&=-\frac{k}{5T^2},\\
+        \frac{\partial \beta}{\partial k}&=\frac{1}{5T},\\
+        u_{\beta}&=\sqrt{(\frac{\partial \beta}{\partial T})^2(u_T)^2+(\frac{\partial \beta}{\partial k})^2(u_k)^2}=\sqrt{(\frac{k^2}{25T^4})(u_T)^2+(\frac{1}{25T^2})(u_k)^2}\\
+        &=\sqrt{(\frac{0.511^2}{25\times1.5561^4})(0.0001^2)+(\frac{0.022^2}{25\times1.5561^2})}\\
+        &\approx0.003s^{-1}
+    \end{split}
+    \]
+    where $k=\ln(\theta_i/\theta_{i+5})$.
+
+    Thus, 
+    \[
+        \beta=0.0657\pm 0.003s^{-1}, \quad u_{\beta,r}=4\%
+    \]
+
+\subsection{Uncertainty of $\theta_{st}$ vs. $\omega$ and $\varphi$ vs. $\omega$}
+    We denote that $ratio=\omega/\omega_0$. To determine the uncertainty of ratio, we know that
+    \[
+    \begin{split}
+        ratio&=\frac{20\pi}{10T\omega_0},\\
+        \frac{\partial ratio}{\partial (10T)}&=-\frac{20\pi}{(10T)^2\omega_0},\\
+        \frac{\partial ratio}{\partial \omega_0}&=-\frac{20\pi}{(10T)\omega_0^2},\\
+        u_{ratio}&=\sqrt{(\frac{\partial ratio}{\partial (10T)})^2(u_{10T})^2+(\frac{\partial ratio}{\partial \omega_0})^2(u_{\omega_0})^2}\\
+        &=\sqrt{\frac{400\pi^2}{(10T)^4\omega_0^2}(u_{10T})^2+\frac{400\pi^2}{(10T)^2\omega_0^4}(u_{\omega_0})^2}.
+    \end{split}
+    \]
+
+    As is calculated before, $\omega_0=4.058\pm 0.004rad/s$.
+
+    \textbf{For example}, when $10T=14.865\pm 0.001s$, the uncertainty of $ratio$ is
+    \[
+        u_{ratio}=\sqrt{\frac{400\times3.1416^2}{14.865^4\times4.058^2}(0.001)^2+\frac{400\times3.1416^2}{14.865^2\times4.058^4}(0.004)^2}=0.0010[no\ unit]
+    \]
+
+    To avoid the similar calculation, the results of uncertainty are listed in Table \ref{data_phi2}.
+
+    Then we consider the uncertainty of $\varphi$ and $\theta$. Since these two data only obtain type-B uncertainty, the combined uncertainty of them are both equal to $\Delta_B=1\degree$, namely
+    \[
+        u_{\varphi}=1\degree, \quad u_{\theta}=1\degree.
+    \]
