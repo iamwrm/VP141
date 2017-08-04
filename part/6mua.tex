@@ -36,75 +36,76 @@ $$ u_{\omega_0,r}=\frac{u_{\omega_0}}{\omega_0}\times100\%
 \subsection{Uncertainty of damping coefficient}
 
 The type-A uncertainty of $\ln(\theta_i/\theta_{i+5})$ can be determined by
-calculating $s\times t_{0.95}/\sqrt{n}$. Here we denote it as k. Hence  
+calculating $s\times t_{0.95}/\sqrt{n}$.
 
-\[
-\begin{split}
-t_{0.95}&=2.78,\quad n=5\\
-\Delta_{A,k}&=t_{0.95}/\sqrt{5}\times
+Let $k = s \times t_{0.95}/\sqrt{n}$.
+
+
+$$ t_{0.95}=2.78,\quad n=5$$ 
+
+$$ \Delta_{A,k}=t_{0.95}/\sqrt{5}\times
 \sqrt{\frac{1}{5-1}\sum_{i=1}^5(k_i-\bar{k})^2}=2.78/\sqrt{5}\times
-0.00444\approx0.005[no\ unit] 
-\end{split}
-\]
+0.00444 = 0.005 $$ 
 
-Then, for the type-B uncertainty, we calculate the propagated uncertainty.
+Then, for the type-B uncertainty, 
 
-\[
-\begin{split}
-\frac{\partial k}{\partial \theta_{i}}&=\frac{1}{\theta_i},\\
-\frac{\partial k}{\partial \theta_{i+5}}&=-\frac{1}{\theta_{i+5}},\\
-\Delta_{B,k}&=\sqrt{\frac{\partial k}{\partial
+$$ \frac{\partial k}{\partial \theta_{i}}=\frac{1}{\theta_i} $$
+$$ \frac{\partial k}{\partial \theta_{i+5}}=-\frac{1}{\theta_{i+5}} $$ 
+$$ \Delta_{B,k}=\sqrt{\frac{\partial k}{\partial
     \theta_{i}}^2(u_{\theta_i})^2+\frac{\partial k}{\partial
     \theta_{i+5}}^2(u_{\theta_{i+5}})^2}
-=\sqrt{(\frac{u_{\theta_i}}{\theta_i})^2+(\frac{u_{\theta_{i+5}}}{\theta_{i+5}})^2} 
-\end{split}
-\]
+=\sqrt{(\frac{u_{\theta_i}}{\theta_i})^2+(\frac{u_{\theta_{i+5}}}{\theta_{i+5}})^2}  $$ 
 
-\textbf{For example}, when $i=0$, $\theta_0=89\degree$, $u_{\theta_2}=1\degree$,
+
+When $i=0$, $\theta_0=89\degree$, $u_{\theta_2}=1\degree$,
 $\theta_5=54\degree$, $u_{\theta_5}=1\degree$. 
 
 \[
-\Delta_{B,k}=\sqrt{(\frac{1}{89})^2+(\frac{1}{54})^2}=0.022[no\ unit]
+\Delta_{B,k}=\sqrt{(\frac{1}{89})^2+(\frac{1}{54})^2}=0.022 
 \]
 
-Choose the example propagated uncertainty as the type-B uncertainty of
-$\ln(\theta_i/\theta_{i+5})$. Thus the combined uncertainty is 
+Considering the type-B uncertainty of $\ln(\theta_i/\theta_{i+5})$, the combined
+uncertainty is 
+
 \[
 \begin{split}
-u_{k}&=\sqrt{(0.005)^2+(0.022)^2}\approx0.022[no\ unit],\\
+u_{k}&=\sqrt{(0.005)^2+(0.022)^2}= 0.022,\\
 u_{k,r}&=\frac{u_k}{\bar{k}}\times100\%=\frac{0.022}{0.511}\times100\%=4\%
 \end{split}
 \]
 
 Hence
 
+$$ \ln(\theta_i/\theta_{i+5})=0.456\pm0.005, \quad u_r=1.09\% $$ 
+
+For $10T=15.792 \pm 0.001s$, we know that
 \[
-\ln(\theta_i/\theta_{i+5})=0.511\pm0.022, \quad u_r=4\%
+T=1.5792\pm0.0001s, \quad u_{r,T}=0.006\%.
 \]
 
-For $10T=15.561\pm0.001s$, we know that
-\[
-T=1.5561\pm0.0001s, \quad u_{r,T}=0.006\%.
-\]
+Then calculate the uncertainty of $\beta=\ln(\theta_i/\theta_{i+5})/(5T)$.
 
-Then we will calculate the uncertainty of $\beta=\ln(\theta_i/\theta_{i+5})/(5T)$.
+$$ \frac{\partial \beta}{\partial T}=-\frac{k}{5T^2}$$ 
+
+$$ \frac{\partial \beta}{\partial k}=\frac{1}{5T} $$
+
 \[
 \begin{split}
-\frac{\partial \beta}{\partial T}&=-\frac{k}{5T^2},\\
-\frac{\partial \beta}{\partial k}&=\frac{1}{5T},\\
 u_{\beta}&=\sqrt{(\frac{\partial \beta}{\partial T})^2(u_T)^2+(\frac{\partial
-    \beta}{\partial
-    k})^2(u_k)^2}=\sqrt{(\frac{k^2}{25T^4})(u_T)^2+(\frac{1}{25T^2})(u_k)^2}\\ 
-&=\sqrt{(\frac{0.511^2}{25\times1.5561^4})(0.0001^2)+(\frac{0.022^2}{25\times1.5561^2})}\\
-&\approx0.003s^{-1}
+    \beta}{\partial k})^2(u_k)^2}  
+=\sqrt{(\frac{k^2}{25T^4})(u_T)^2+(\frac{1}{25T^2})(u_k)^2}\\
+&=\sqrt{(\frac{0.511^2}{25\times1.5792^4})(0.0001^2)+(\frac{0.022^2}{25\times1.579
+    2^2})}  \\ 
+&= 0.003s^{-1} 
 \end{split}
 \]
 
 where $k=\ln(\theta_i/\theta_{i+5})$.
 
 Thus, 
+
 \[
-\beta=0.0657\pm 0.003s^{-1}, \quad u_{\beta,r}=4\%
+\beta=0.0648\pm 0.003s^{-1}, \quad u_{\beta,r}=5\%
 \]
 
 
