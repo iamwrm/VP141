@@ -17,33 +17,35 @@ Still, $u_{10T,r}=0.07\%$, that means our experiment setup works pretty well.
 For recommendation, I think introducing a control system for the amplitude in
 addition to bare hand can bring more precison.
 
+
+% NOTE:DONE
+
 \subsection{Damping coefficient}
 
-\subsubsection{Discussions}
+The damping coefficient is calculated from dividing the decreasing
+amplitude and log it.
+When calculating the damping coefficient, successive difference method is applied
+to reduce the deviation. 
 
-The damping coefficient is calculated from the exponentially decreasing
-amplitude. In the calculation of damping coefficient, we apply successive
-difference method to eliminate the deviation. However, the precision is not
-satisefying because the relative uncertainty reaches 4\%. To be more specific,
-we want some other data processing methods. 
+For more precison than successive difference method, we could use curve fitting,
+thus the whole list can be used to determine the damping coefficient $\beta$
+from $\theta_n=\theta_0e^{-\beta (nT)}$, instead of only using 5 groups of
+isolated points. 
 
-\subsubsection{Improvements and recommendations}
+\begin{figure}[H]
+\centering
+\includegraphics[width=1\textwidth]{matlab/p3}
+\caption{Curve fitting example}
+\end{figure}
 
-Besides successive difference method, we can also apply curve fitting in this
-case. By exponential cauve fitting, we can also obtain the damping coefficient
-$\beta$ from $\theta_n=\theta_0e^{-\beta (nT)}$. 
-	
+And we can find the b of the curve, which is $-0.09125$
+Comparing $- 5\times b =  0.4562 $ with $\beta = 0.4558$
+$$ u_{\beta,r}=  0.0878 \% $$
+
+We can reach a conclusion that although curve fitting can introduce more precise
+process, the present methode is quite accurate.
+
 % NOTE: Delete a figure
-
-From the information of the exponential fitting cure, we find that its R-square
-value is quite close to 1, which means it's very likely to be an exponential
-function. We notice that the b value here, which presents $-\beta$, is
-$-0.06454\pm 0.0006s^{-1}$. Compared with our result by successive difference
-method $\beta=0.0657\pm 0.003s^{-1}$, the fitting value is more preicise. It
-shows that different methods to obtain some values are different in precision
-and reliability. 
-	
-
 
 \subsection{$\varphi$ vs. $\omega$}
 
@@ -55,7 +57,7 @@ coefficient, the left side curve of $\omega/\omega_0=1.0$ is higher than the
 other and the right side curve is lower than that. However, our results show
 that although the right half of the damping selection 3 curve is higher than
 damping selection 2 near the $\omega/\omega_0=1.0$, its gets lower quickly and
-beneath the damping selection 2, which is abnoraml. We recall the measurement
+beneath the damping selection 2, which is abnormal. We recall the measurement
 procedure and conclude that it's blamed on the backslash error. During the
 second half of the experiment we thought the $\omega$ gap we chose is too small
 so we relatively quickly rotated the knob but made the gap too big. Therefore,
@@ -99,5 +101,6 @@ $\omega/\omega_0=1.0$.
 % NOTE: Finish below
 \subsubsection{Improvements and recommendations}
 
-It hurts for us to bear the flashlight for reading the phase data.
-Electronic devices such as a camera can be introduced to record the data, instead of directly reading the data with human eyes
+It hurts for us to bear the flashlight for reading the phase data. Electronic
+devices such as a camera can be introduced to record the data, instead of
+directly reading the data with human eyes.
