@@ -1,6 +1,5 @@
 *.DS_Store
 *.fdb_latexmk
-*.pdf
 *.out
 # Created by https://www.gitignore.io/api/latex
 
