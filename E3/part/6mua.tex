@@ -1,0 +1,52 @@
+\section{Measurement Uncertainty Analysis}
+
+\subsection{Devices Precision}
+The precision of each devices are shown in Table~\ref{pres}.
+\begin{table}
+	\centering
+	\begin{tabular}{|l|c|c|}
+	\hline
+	Devices & Precision & Unit 				\\ \hline
+	Jolly balance & 0.01 & [cm] 			\\ \hline
+	Ruler & 0.1 & [cm]						\\ \hline
+	Timer for periods & 0.1 & [ms]			\\ \hline
+	Timer for maximum speed & 0.01 & [ms]	\\ \hline
+	Calliper & 0.02 & [mm]					\\ \hline
+	Electronic scale & 0.01 & [g]			\\ \hline
+	\end{tabular}
+	\caption{Devices precision}
+\label{pres}
+\end{table}
+
+\subsection{Uncertainty in Measurement for Spring Constant}
+For measuring $L_i$, there is no type-A uncertainty.
+Thus, 
+$$ u_{L_0} = 0.01 \quad [cm] $$
+$$ u_{L_i} = 0.01 \quad [cm] $$
+$$ u_{L_i,r} = \frac{0.01}{2.01} \cdot 100 \% = 0.49 \quad [cm] $$
+For measuring $m_i$, there is no type-A uncertainty.
+Thus, $$ u_m = 0.01 \quad [g] $$
+
+$$ u_{\Delta L}=\sqrt{(\frac{\partial \Delta L}{\partial L_i})^2\cdot (u_{L_i})^2+(\frac{\partial \Delta L}{\partial L_0})^2\cdot (u_{L_0})^2}\approx1.4\times10^{-4} \quad m $$
+
+The uncertainty of the gravity force measurement $u_{W}$ of $W=mg$ is
+$$   \frac{\partial W}{\partial m} = g =9.794 \quad kg\cdot m/s^2        $$
+$$   u_m = \Delta_{dev}=0.01 \quad g				                     $$
+$$   u_{W} = \sqrt{(\frac{\partial W}{\partial m})^2 \cdot 
+(u_m)^2} = \sqrt{ {(9.794)^2\times (1\times10^{-5})^2}} 
+ \approx 1 \times10^{-4} \quad N										 $$
+
+
+$$ k_1 = 2.3311 \pm 0.013  N/m , \quad u_{k_1,r} = 0.55 \% $$
+$$ k_2 =  2.3206 \pm 0.0105  N/m , \quad u_{k_2,r} = 0.45 \% $$
+$$ k_3 = 1.165 \pm 0.0380  N/m , \quad u_{k_3,r} = 3.26 \% $$
+
+For $k_{3,theory}$  calculated from theory, 
+$$ k_{3,theory} = \frac{k_1 \cdot k_2 }{k_1 + k_2} =  1.1629 $$ 
+$$ u_{k_{3,theory}}=\sqrt{
+	 (\frac{\partial k_{3,theory} }{\partial k_1})^2 \cdot (u_{k_1})^2
+	+(\frac{\partial k_{3,theory} }{\partial k_2})^2 \cdot (u_{k_2})^2 }
+	= 0.0006 \quad N/m  $$
+$$   u_{k_{3,theory},r} = \frac{0.0006 }{1.1629} \cdot 100 \% =0.05 \%  $$
+
+\input{part/6mua1}
