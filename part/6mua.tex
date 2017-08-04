@@ -1,30 +1,36 @@
 \section{Measurement Uncertainty Analysis}
 
 \subsection{Uncertainty for natural angular frequency}
-    First, we will get the uncertainty of $(10T)$.
 
-    To estimate type-A uncertainty of $(10T)$, the standard deviation of the average value is caluculated as
-    \[
-    \begin{split}
-        &t_{0.95}=3.18,\quad n=4,\\
-        &s_{\overline{10T}}=\sqrt{\frac{1}{n(n-1)}\sum_{i=1}^n((10T)_i-\overline{10T})^2}.\\
-        &\Delta_{10T,A}=\frac{3.18}{\sqrt{4}}\times0.0076811\approx 0.017s.
-    \end{split}
-    \]
+To estimate type-A uncertainty of $(10T)$,
+the standard deviation of the average value can be calculated as
 
-    The type-B uncertainty of $(10T)$ is 0.001s. Hence, the uncertainty of $(10T)$ is
-    \[
-        u_{10T}=\sqrt{\Delta_A^2+\Delta_B^2}=\sqrt{0.017^2+0.001^2}\approx 0.017s
-    \]
+\[
+\begin{split}
+&t_{0.95}=3.18,\quad n=4,\\
+&s_{\overline{10T}}=\sqrt{\frac{1}{n(n-1)}\sum_{i=1}^n((10T)_i-\overline{10T})^2}.\\ 
+&\Delta_{10T,A}=\frac{3.18}{\sqrt{4}}\times0.0076811\approx 0.017s.
+\end{split}
+\]
 
-    Hence, considering the uncertainty of $\omega_0$,
-    \[
-    \begin{split}
-        &\omega_0=\frac{20\pi}{10T},\quad \frac{\partial \omega_0}{\partial (10T)}=-\frac{20\pi}{(10T)^2}\\
-        &u_{\omega_0}=\sqrt{\frac{\partial \omega_0}{\partial (10T)}^2(u_{10T})^2}=\frac{20\pi}{(10T)^2}u_{(10T)}=\frac{20\times3.1416}{15.485^2}\times0.017\approx0.004rad/s,\\
-        &u_{\omega_0,r}=\frac{u_{\omega_0}}{\omega_0}\times100\%=\frac{0.004}{4.058}=0.10\%
-    \end{split}
-    \]
+The type-B uncertainty of $(10T)$ is 0.001s. Hence, the uncertainty of $(10T)$ is
+
+$$ u_{10T}=\sqrt{\Delta_A^2+\Delta_B^2}=\sqrt{0.017^2+0.001^2}\approx 0.017s $$  
+
+For the uncertainty of $\omega_0$,
+
+\[
+\begin{split}
+&\omega_0=\frac{20\pi}{10T}\\
+&\frac{\partial \omega_0}{\partial (10T)}=-\frac{20\pi}{(10T)^2}\\
+&u_{\omega_0}=\sqrt{\frac{\partial \omega_0}{\partial
+    (10T)}^2(u_{10T})^2}=\frac{20\pi}{(10T)^2}u_{(10T)}\\
+&=\frac{20\times3.1416}{15.485^2} \times 0.017 = 0.004rad/s,\\  
+&u_{\omega_0,r}=\frac{u_{\omega_0}}{\omega_0}\times100\%=\frac{0.004}{4.058}=0.10\%
+\end{split}
+\]
+
+%TODO:
 
 \subsection{Uncertainty of damping coefficient}
     The type-A uncertainty of $\ln(\theta_i/\theta_{i+5})$ can be determined by calculating $s\times t_{0.95}/\sqrt{n}$. Here we denote it as k. Hence
